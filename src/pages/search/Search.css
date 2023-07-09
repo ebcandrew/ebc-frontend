@@ -1,0 +1,10 @@
+.search {
+  padding: var(--padding);
+}
+
+.searchfor {
+  color: var(--fadedWhite);
+  font-weight: bolder;
+  font-size: 20px;
+  text-transform: capitalize;
+}

@@ -1,0 +1,122 @@
+/* AdminDashboard.css */
+
+.admin-dashboard {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.admin-dashboard h2,
+.admin-dashboard h1 {
+  color: var(--fadedWhite);
+}
+.admin-dashboard td {
+  color: var(--fadedWhite);
+}
+
+.admin-dashboard h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.admin-dashboard table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+}
+
+.admin-dashboard th,
+.admin-dashboard td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+.admin-dashboard th {
+  background-color: #f1f1f1;
+}
+
+.admin-dashboard tr:hover {
+  background-color: var(--darkBlue);
+  cursor: pointer;
+}
+
+.admin-dashboard .actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.admin-dashboard button {
+  padding: 8px 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-dashboard button:hover {
+  background-color: #3e8e41;
+}
+
+.admin-dashboard input[type="text"],
+.admin-dashboard textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.admin-dashboard input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-dashboard input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.admin-dashboard a {
+  text-decoration: none;
+}
+
+.admin-dashboard a {
+  color: var(--fadedWhite);
+}
+
+@media screen and (max-width: 480px) {
+  .admin-dashboard {
+    padding: 8px;
+  }
+
+  .admin-dashboard h2 {
+    font-size: 18px;
+  }
+
+  .admin-dashboard table {
+    font-size: 12px;
+  }
+
+  .admin-dashboard th,
+  .admin-dashboard td {
+    padding: 6px;
+  }
+
+  .admin-dashboard input[type="text"],
+  .admin-dashboard textarea {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .admin-dashboard input[type="submit"] {
+    font-size: 12px;
+    padding: 6px;
+  }
+}

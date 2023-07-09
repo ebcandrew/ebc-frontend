@@ -1,0 +1,132 @@
+.eventmap {
+  padding: var(--padding);
+}
+
+.eventmap__map {
+  height: 50vh;
+}
+
+.eventmap__mapfooter {
+  display: flex;
+}
+
+.eventmap__mapfooter > p {
+  margin-right: 1rem;
+  text-transform: uppercase;
+  color: var(--fadedWhite);
+  display: flex;
+  align-items: center;
+}
+
+.eventmap__mapfooter div.green {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--green);
+  margin-right: 1rem;
+}
+
+.eventmap__mapfooter div.white {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--fadedWhite);
+  margin-right: 1rem;
+}
+
+.eventmap__fixes .fixture__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.eventmap__pinned {
+  display: flex;
+  justify-content: space-between;
+}
+
+.eventmap__pinned > div {
+  width: 40%;
+  
+
+}
+
+.fixture__row img {
+  width: 50px;
+  margin: 0 7px;
+
+}
+
+
+
+.eventmap__pinned .eventmap__pinned__indie h3,
+.eventmap__fixes h3 {
+  text-align: center;
+  margin: 2rem 0;
+  color: var(--fadedWhite);
+  text-transform: uppercase;
+}
+
+
+
+
+.eventmap__fixes {
+  color: var(--red);
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.fixture__row .verses {
+  color: var(--fadedWhite);
+  border: 1px solid var(--red);
+  padding: 0.3rem;
+}
+
+.eventmap__fixes {
+  background-color: var(--darkBlue);
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.eventmap__tournament {
+  background-color: var(--red);
+  padding: 1rem;
+}
+
+.eventmap__tournament__details {
+  display: flex;
+  justify-content: space-between;
+  color: var(--fadedWhite);
+  margin-top: 2rem;
+}
+
+.eventmap__tournament__details #text {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 1080px) {
+  .eventmap__pinned{
+    justify-content: space-around;
+  }
+  
+}
+
+
+@media screen and (max-width: 850px) {
+  .eventmap__pinned{
+    flex-direction: column;
+  }
+  .eventmap__pinned__indie{
+    margin:  0 auto;
+  }
+  .eventmap__pinned > div {
+    width: 100%;
+  }
+  .eventmap__mapfooter > p,
+  .eventmap__pinned .eventmap__pinned__indie h3, .eventmap__fixes h3 
+   ,.eventmap__tournament__details  {
+    font-size: 12px;
+  }
+}

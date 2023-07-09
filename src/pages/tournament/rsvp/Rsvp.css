@@ -1,0 +1,148 @@
+.rsvp {
+  padding: var(--padding);
+}
+.rsvp_time{
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+.rsvp_time_content{
+  color: var(--fadedWhite);
+  font-weight: bolder;
+  margin: 0 20px;
+}
+.rsvp_time_content span{
+  color: var(--red);
+  border: none;
+}
+
+.rsvp .leaguetable__banner .leaguetable__banner__text {
+  width: 50%;
+}
+
+.rsvp .leaguetable__banner {
+  align-items: flex-start;
+}
+
+.rsvp .leaguetable__banner .leaguetable__banner__text h3 {
+  margin-bottom: 2rem;
+}
+
+.rsvp .leaguetable__banner .leaguetable__banner__text p {
+  color: var(--lightText);
+  width: 80%;
+  line-height: 1.5rem;
+}
+
+.rsvp .leaguetable__banner .leaguetable__banner__text .button {
+  width: 20%;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.rsvp__main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rsvp__main > div {
+  width: 50%;
+  text-align: center;
+}
+
+.rsvp__main__left > div {
+  display: flex;
+  justify-content: center;
+  color: var(--fadedWhite);
+  margin: 2rem 0;
+}
+
+.rsvp__main__left > div h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+}
+
+.rsvp__main__left p .details {
+  font-size: 12px;
+}
+
+.rsvp__main__right__frame {
+  background-color: var(--darkBlue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 50vh;
+  padding: 10px 0;
+}
+
+.rsvp__main__right__frame > div {
+  width: 50%;
+}
+
+.rsvp__main__right__frame .MuiSvgIcon-root {
+  color: var(--fadedWhite);
+  border: 2px solid var(--orange);
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.rsvp__main__right__frame h3 {
+  color: var(--fadedWhite);
+  text-transform: uppercase;
+  margin: 0.5rem 0;
+}
+
+.rsvp__main__right__frame #rank {
+  color: var(--lightText);
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.rsvp .tournament__fixtures__card__logo{
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.rsvp .tournament__fixtures__card__logo img{
+  height: 100%;
+  width: 100%;
+}
+
+.rsvp .tournament__fixtures__card__other .country {
+  display: flex;
+}
+
+.rsvp .tournament__fixtures__card__other .country img {
+  margin-right: 0.5rem;
+  margin-top: 1rem;
+}
+
+.rsvp .username .button {
+  width: 20%;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 880px) {
+  .rsvp__main {
+    flex-direction: column;
+  }
+  .rsvp .leaguetable__banner {
+    align-items: center;
+  }
+  .rsvp .leaguetable__banner .leaguetable__banner__text {
+    width: 100%;
+  }
+  .rsvp__main > div {
+    width: 100%;
+  }
+  .rsvp__main__left > div h3,
+  .rsvp__main__right__frame h3,
+  .rsvp__main__right__frame #rank {
+    font-size: 10px;
+  }
+}

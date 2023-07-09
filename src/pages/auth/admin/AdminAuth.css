@@ -1,0 +1,57 @@
+.admin__container {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.admin__container input {
+  background-color: var(--bgColor);
+  width: 60%;
+  color: var(--fadedWhite);
+  height: 2rem;
+  margin: 1rem auto;
+  border: 1px solid var(--fadedWhite);
+  background-color: var(--bgColor);
+  outline: none;
+  padding: 0.2rem 0;
+}
+
+.admin__container__form h4 {
+  color: var(--fadedWhite);
+  font-size: 20px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.admin__container .button {
+  width: 30%;
+  padding: 0.5rem;
+  margin: auto;
+}
+
+.admin__container h5 {
+  color: var(--fadedWhite);
+  font-weight: bold;
+  margin-top: 1rem;
+  text-transform: capitalize;
+  margin: 1rem auto;
+}
+
+.admin__container a {
+  color: var(--fadedWhite);
+  font-weight: bold;
+  text-decoration: none;
+  margin: 1rem auto;
+  text-transform: capitalize;
+  line-height: 0.5rem;
+}
+
+@media (max-width: 800px) {
+  .admin__container {
+    width: 100%;
+  }
+
+  .admin__container input {
+    width: 80%;
+  }
+}

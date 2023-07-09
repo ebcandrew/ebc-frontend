@@ -1,0 +1,1134 @@
+.tournament {
+  padding: var(--padding);
+}
+
+.tournament__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.react-time-picker__wrapper {
+  border: none !important;
+}
+
+.tournament__image,
+.tournament__text {
+  width: 50%;
+}
+
+.tournament__image img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+
+.alltournaments {
+  padding: var(--padding);
+}
+
+.alltournaments__list__item {
+  color: var(--fadedWhite);
+  font-weight: bolder;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.alltournaments__list__item li {
+  list-style: none;
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.alltournaments__list__item p {
+  margin: 1rem auto;
+  text-transform: capitalize;
+  width: 30%;
+}
+
+.admin__btn .button {
+  margin-bottom: 1rem;
+  width: fit-content;
+  padding: 0.6rem;
+}
+
+.alltournaments__list__item li p span {
+  color: var(--red);
+  text-transform: none;
+}
+
+.alltournaments__list__item p#name {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.tournament__text h3 {
+  font-size: 40px;
+  width: 100%;
+  color: white;
+  text-transform: capitalize;
+}
+
+.tournament__text h3 span {
+  color: var(--red);
+}
+
+.tournament__text p {
+  color: var(--lightText);
+  width: 70%;
+  line-height: 2rem;
+}
+
+.tournament__displays .username {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: var(--darkBlue);
+  margin-top: 2rem;
+}
+
+.tournament__displays .username .button {
+  text-transform: uppercase;
+  padding: 0.5rem;
+  width: 5%;
+}
+
+.tournament__fixtures {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tournament__fixtures__card {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: var(--darkBlue);
+  width: 30%;
+}
+
+.tournament__fixtures__card__other .country {
+  width: 20px;
+}
+
+.tournament__fixtures__card__other .country img {
+  width: 100%;
+}
+
+.tournament__fixtures__card__logo {
+  background-color: var(--bgColor);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 1.5rem;
+  margin-right: 1rem;
+}
+
+.catmodal.tournamenthost {
+  width: 30%;
+}
+
+.catmodal.tournamenthost .catmodal__item {
+  color: var(--fadedWhite);
+}
+
+.tournament__fixtures__card__other .clubname {
+  color: var(--red);
+  text-transform: uppercase;
+}
+
+.tournament__fixtures__card__other .username {
+  color: var(--fadedWhite);
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.tournament__fixtures__card__other .cp {
+  color: var(--fadedWhite);
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.tournament__matchups__fix__card {
+  margin: 3rem auto;
+}
+
+.tournament__matchups__fix__card h4 {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--fadedWhite);
+}
+
+.tournament__matchups__fix__card #leaguename {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--red);
+  font-size: 12px;
+  margin-top: 0.5rem;
+}
+
+.tournament__matchups__fix__card__line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 1rem auto;
+  color: var(--fadedWhite);
+}
+
+.tournament__matchups__fix__card__line p {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.tournament__matchups__fix__card__line .user.two .doublecurve {
+  background-color: var(--red);
+}
+
+.tournament__matchups__fix__card__line .verse {
+  border: 1px solid var(--red);
+  padding: 0.3rem 0.5rem;
+}
+
+.tournament__matchups__fix__card__line .score {
+  font-size: 20px;
+}
+
+.tournament__loadmore {
+  width: 20%;
+  margin: auto;
+}
+
+.tournament__loadmore .button {
+  padding: 0.5rem;
+}
+
+.tournamentps__video {
+  width: 100%;
+  /* height: 70vh; */
+}
+
+.tournamentps__video img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tournamentbt .league__banner__1 {
+  width: 65%;
+}
+
+.tournamentbt .league__banner__2 {
+  width: 80%;
+}
+
+.tournamentbt .league__banner__1 h3 {
+  width: 90%;
+}
+
+.tournamentbt .league__banner__1__text {
+  color: var(--red);
+  text-transform: capitalize;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.tournamentbt .league__banner__1__text span {
+  color: var(--fadedWhite);
+}
+
+.tournamentbt__body p {
+  color: var(--fadedWhite);
+}
+
+.tournamentbt__body p.subtext {
+  font-size: 14px;
+  color: var(--lightText);
+}
+
+.tournamentbt__body__item {
+  display: flex;
+  margin: 2rem 0;
+  background-color: var(--darkBlue);
+  padding: 2rem;
+}
+
+.tournamentbt__body__item .item__btn,
+.tournamentbt__body__item .other__items {
+  width: 50%;
+}
+
+.tournamentbt__body__item .other__items {
+  width: 100%;
+}
+
+.tournamentbt__body__item .item__btn .button {
+  width: 80%;
+}
+
+.tournamentbt__body__item .other__items h3 {
+  color: var(--fadedWhite);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 16px;
+}
+
+.tournamentbt__body__item .other__items p {
+  color: var(--lightText);
+  margin-bottom: 1rem;
+  font-size: 14px;
+}
+
+.tournamentbt__body__item .other__items input {
+  color: var(--lightText);
+  margin-bottom: 1rem;
+  width: 30%;
+  border: none;
+  outline: none;
+  background-color: var(--bgColor);
+  padding: 1rem;
+}
+
+.spicie__rows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem auto;
+}
+
+.spicie__rows .select{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bgColor);
+  width: 30%;
+  /* padding: 0.5rem; */
+  position: relative;
+}
+
+.spicie__rows .select p {
+  color: var(--fadedWhite);
+  font-weight: bolder;
+}
+.spicie__rows .dropdown-header p {
+  color: var(--fadedWhite);
+  font-weight: bolder;
+}
+
+.spicie__rows p {
+  text-transform: capitalize;
+}
+
+.spicie__select {
+  display: flex;
+  align-items: center;
+}
+
+.spicie__rows__input {
+  background-color: var(--bgColor);
+  border: none;
+  outline: none;
+  color: var(--fadedWhite);
+}
+
+.spicie__select__btn .active .MuiSvgIcon-root  {
+  color: var(--red);
+  cursor: pointer;
+}
+.spicie__select__btn .inactive .MuiSvgIcon-root  {
+  color: var(--fadedWhite);
+  cursor: pointer;
+}
+
+.spicie__select {
+  color: var(--fadedWhite);
+  background-color: var(--bgColor);
+  padding: 0.5rem;
+  width: 20%;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+
+.spicie__select__btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spicie__select__btn p {
+  font-size: 14px;
+  font-weight: bolder;
+  text-transform: capitalize;
+  color: var(--fadedWhite);
+}
+
+.spicie__select__btn .MuiSvgIcon-root {
+  font-size: 30px;
+}
+
+.other__items__2 h3 {
+  color: var(--fadedWhite);
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+.other__items__2 p {
+  color: var(--lightText);
+}
+
+.spicie__row__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.spicie__row__button .button {
+  margin: 1rem;
+  padding: 0.7rem;
+}
+
+.other__items .team__select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  background-color: var(--bgColor);
+  /* padding: 0.5rem; */
+  position: relative;
+}
+
+.other__items .team__select div {
+  font-weight: bolder;
+  text-transform: capitalize;
+  color: var(--fadedWhite);
+}
+
+.other__items .team__select div{
+  font-weight: bolder;
+  text-transform: capitalize;
+  color: var(--fadedWhite);
+}
+
+.other__items .team__select .dropdown-header p {
+  font-weight: bolder;
+  text-transform: capitalize;
+  color: var(--fadedWhite);
+}
+
+.other__items__select__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+#calc {
+  color: var(--red);
+  margin: 1rem 0;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+
+.other__items__select__flex .team__select2 {
+  margin-top: 1rem;
+  background-color: var(--bgColor);
+  font-weight: bolder;
+  text-transform: capitalize;
+  width: 40%;
+  color: var(--fadedWhite);
+  padding: 0.5rem;
+}
+
+.other__items__select__flex .team__select p{
+  margin: 0;
+}
+
+.other__items__select__flex.tts {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.other__items__select__flex.tts div {
+  background-color: var(--bgColor);
+  padding: 0.5rem;
+  text-transform: capitalize;
+  color: var(--fadedWhite);
+  margin: 0.5rem;
+  font-weight: bolder;
+  width: 20%;
+}
+
+.other__items__select__flex.tts div:first-child {
+  background-color: transparent;
+}
+
+.other__items__rule__item {
+  margin: 3em 0;
+}
+
+.rule__load__more {
+  width: 30%;
+  margin: auto;
+}
+
+.rule__load__more .button {
+  margin-bottom: 2rem;
+  padding: 0.8rem;
+}
+
+.tournamentmu {
+  padding: var(--padding);
+}
+
+.tournamentmu .tournament__text__footer {
+  width: 60%;
+  margin-top: 3rem;
+}
+
+.tournamentmu .tournament__text__footer .content {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.tournamentmu .tournament__text__footer .content p {
+  color: var(--fadedWhite);
+  font-weight: bolder;
+}
+
+.tournamentmu .tournament__text__footer .content p:last-child {
+  color: var(--red);
+}
+
+.tournamentmu__main section div:first-child {
+  width: 15%;
+  margin-right: 4rem;
+  padding: 0.4rem;
+}
+
+.tournamentmu__main section div:nth-child(2) {
+  color: var(--fadedWhite);
+}
+
+.tournamentmu__main section span {
+  color: var(--red);
+}
+
+.tournamentmu__main section div:first-child .button {
+  width: 100%;
+}
+
+.tournamentmu__main .share {
+  display: flex;
+  background-color: var(--bgColor);
+  padding: 0.8rem;
+  margin: 2rem 0;
+  justify-content: space-between;
+  font-weight: bolder;
+  font-size: 20px;
+  width: 50%;
+}
+
+.tournamentmu__main .share .MuiSvgIcon-root {
+  color: var(--red);
+}
+
+.tournamentmu__main .add {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.tournamentmu__main .add .button {
+  width: 80%;
+  margin: 0 1rem;
+  padding: 0.7rem;
+}
+
+.tournamentmu section {
+  margin: 2rem;
+  background-color: var(--darkBlue);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.tournamentmu__main__accept {
+  width: 20%;
+  margin: auto;
+}
+
+.tournamentmu__main__accept .button {
+  padding: 0.7rem;
+}
+
+.tournamentmu__battles p {
+  color: var(--lightText);
+  font-size: 14px;
+  text-align: center;
+}
+
+.tournamentmu__battles .battle__table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--fadedWhite);
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.tournamentmu__battles .battle__table section {
+  background-color: transparent;
+  margin-bottom: 0;
+}
+
+.tournamentmu__battles .battle__table section > div {
+  padding: 1rem;
+  width: 20rem;
+}
+
+.tournamentmu__battles .battle__table section .first {
+  background-color: var(--green);
+}
+
+.tournamentmu__battles .battle__table section .second {
+  background-color: var(--red);
+}
+
+.battle__table__btn {
+  width: 30%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.battle__table__btn .button {
+  padding: 0.8rem;
+}
+
+.tournamentmu .username {
+  width: 30%;
+  margin-top: 2rem;
+}
+
+.tournamentmu .username .button {
+  padding: 0.8rem;
+  text-transform: uppercase;
+}
+
+.tournamentmu .tournament__fixtures__card__other .clubname img {
+  width: 15px;
+  margin-left: 1rem;
+}
+
+.tournamentmu__video__upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--red);
+  padding: 0.5rem;
+  width: 30%;
+  margin: auto;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.tournamentmu__video__upload .MuiSvgIcon-root {
+  color: var(--fadedWhite);
+}
+
+.msg__cta {
+  position: fixed;
+  background-color: var(--red);
+  bottom: 3rem;
+  right: 3rem;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.msg__cta .MuiSvgIcon-root {
+  color: var(--fadedWhite);
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.tournament__displays {
+  padding: var(--padding);
+}
+
+.tournamenthost {
+  padding: var(--padding);
+}
+
+.tournamenthost .redlabel a {
+  text-decoration: none;
+  color: var(--red);
+}
+
+.tournamenthost .redlabel {
+  margin-top: 3rem;
+}
+
+.tournamenthost__select__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tournamenthost__select__heading p .button {
+  padding: 0.7rem;
+}
+
+.tournamenthost__select .subtext {
+  color: var(--lightText);
+  text-align: center;
+}
+
+.tournamenthost .other__items__select__flex {
+  margin: 2rem 0;
+}
+
+.profile2__terms.tournamenthost {
+  font-size: 16px;
+}
+
+.tournamenthost__flex__items section {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.tournamenthost__flex__items section > div {
+  display: flex;
+  align-items: center;
+}
+
+.tournamenthost__flex__items section > div p {
+  display: flex;
+  align-items: center;
+  color: var(--red) !important;
+  font-weight: bolder;
+}
+
+section p#box {
+  background-color: var(--bgColor);
+  width: 50%;
+  padding: 0.7rem;
+  height: 1rem;
+  margin-left: 1rem;
+}
+
+section p#map {
+  background-color: var(--bgColor);
+  width: 50%;
+  padding: 0.7rem;
+  height: 10rem;
+  margin-left: 1rem;
+}
+
+.th__date #date > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tournament_box {
+  margin-left: 1rem;
+}
+
+.host__box {
+  width: 50%;
+  background-color: var(--bgColor);
+  color: var(--fadedWhite);
+  border: none;
+  resize: none;
+  margin-left: 1rem;
+  outline: none;
+}
+
+.th__date #date > div p {
+  background-color: var(--bgColor);
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  margin-left: 3rem;
+  color: var(--fadedWhite);
+  cursor: pointer;
+}
+
+.th__btn {
+  width: 50%;
+  margin: auto;
+}
+
+.th__btn .button {
+  width: 30%;
+  margin: auto;
+  padding: 0.7rem;
+}
+
+.th__btn__share {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.th__btn__share p:first-child {
+  background-color: var(--darkBlue);
+  padding: 0.7rem;
+  width: 60%;
+  color: var(--lightText);
+}
+
+.th__btn__share p:last-child {
+  padding: 1rem;
+  width: 40%;
+  color: var(--fadedWhite);
+}
+
+.th__btn__share p:last-child .button {
+  padding: 1rem;
+  width: 30%;
+  margin: auto;
+}
+
+.tts__section {
+  margin-top: 1rem;
+}
+
+#date {
+  width: 100%;
+}
+
+.enter__tournamnent__btn {
+  width: 20%;
+  margin: auto;
+}
+
+.enter__tournamnent__btn .button {
+  width: 100%;
+  padding: 0.3rem;
+}
+
+.tbtLogo {
+  width: 30%;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.tbtLogo .button {
+  padding: 0.4rem;
+}
+
+.tts__section .tts {
+  color: var(--fadedWhite);
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+
+.tts__section .lowscore,
+.tts__section .highscore {
+  color: var(--fadedWhite);
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 850px) {
+  .alltournaments__list__item p {
+    width: 50%;
+  }
+
+  .tournament__header {
+    flex-direction: column;
+  }
+
+  .tournament__image,
+  .tournament__text {
+    width: 100%;
+  }
+
+  .tournament__text p {
+    width: 100%;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .tournament__fixtures {
+    flex-direction: column;
+  }
+
+  .tournament__fixtures__card {
+    width: 90%;
+  }
+
+  .tournament__matchups__fix__card__line {
+    width: 100%;
+
+    padding: 0.4rem;
+  }
+
+  .tournamentmu section {
+    flex-direction: column;
+  }
+
+  .tournamentmu__main section div:first-child {
+    padding: 0.4rem;
+    width: 60%;
+    margin-right: 0rem;
+    margin-bottom: 7px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .tournamentbt__body__item {
+    flex-direction: column;
+  }
+
+  .tournamentbt__body__item .item__btn,
+  .tournamentbt__body__item .other__items {
+    width: 100%;
+  }
+
+  .item__btn :first-child {
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .tournament__matchups__fix__card__line {
+    flex-direction: column;
+  }
+
+  .tournament__text {
+    font-size: 12px;
+  }
+
+  .tournament__text h3 {
+    font-size: 25px;
+  }
+
+  .battle__table__btn {
+    width: 70%;
+  }
+
+  .tournamentmu__battles .battle__table {
+    flex-direction: column;
+  }
+
+  .tournamentmu section {
+    margin: 2rem 0;
+  }
+
+  .tournamentmu__video__upload {
+    width: 50%;
+  }
+
+  .tournamentmu .tournament__text__footer {
+    width: 100%;
+  }
+
+  .tournamentmu__main__accept {
+    width: 50%;
+  }
+
+  .tournamentbt .league__banner__1 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .tournament__fixtures {
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .spicie__row__button {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .tournament__displays .username {
+    width: 80%;
+    font-size: 12px;
+  }
+
+  .tournament__fixtures__card__logo {
+    width: 25px;
+    height: 25px;
+  }
+
+  .tournament__fixtures__card__logo img {
+    width: 50px;
+    height: 50px;
+    margin-top: -10px;
+    margin-left: -10px;
+  }
+
+  .tournamentmu .username {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .add {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .other__items .team__select {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .spicie__row__button {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .tournament__loadmore {
+    width: 40%;
+  }
+
+  .spicie__row__button {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .th__date #date > div p {
+    margin-left: 1rem;
+  }
+
+  .th__btn .button {
+    width: 80%;
+  }
+
+  .th__btn__share,
+  .rule__load__more {
+    width: 100%;
+  }
+
+  .th__btn__share p:last-child .button {
+    width: 80%;
+  }
+
+  .tournamenthost__select__heading {
+    flex-direction: column;
+  }
+
+  .tournamenthost__select__heading p .button {
+    margin-bottom: 20px;
+    padding: 0.9rem;
+  }
+
+  .tournament__text h3 {
+    font-size: 30px;
+  }
+
+  .tournament__text p {
+    font-size: 14px;
+  }
+
+  .tournament__displays .username {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .tournamenthost .redlabel {
+    margin-top: 0;
+  }
+  .spicie__rows {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .spicie__rows .select,
+  .spicie__select {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .tournamentbt__body__item .other__items input {
+    width: 80%;
+  }
+
+  .tournamentbt .league__banner__1 h3,
+  .tournament__text h3 {
+    font-size: 30px;
+  }
+
+  .tournamentbt__body__item .other__items p,
+  .other__items__2 p,
+  .other__items__select__flex.tts,
+  .other__items__select__flex .team__select2,
+  .other__items .team__select,
+  .tournamentmu section,
+  .tournamentmu__battles .battle__table section,
+  .tournament__fixtures__card__other .username,
+  .tournament__text p,
+  .tournamentmanage__main__fix__item .name,
+  .tournamentmanage__main__fix__item .name > p,
+  .tournamenthost__select .subtext,
+  .profile2__terms.tournamenthost {
+    font-size: 12px;
+  }
+}
+
+.dropdown-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100%);
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.dropdown-header:hover {
+  background-color: var(--darkBlue);
+}
+
+.dropdown-header p {
+  margin: 0;
+}
+
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  font-weight: bolder;
+  max-height: 210px;
+  overflow-y: auto;
+  color: var(--fadedWhite);
+  background-color: var(--bgColor);
+  border: 1px solid var(--darkBlue);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 9;
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: var(--darkBlue);
+}

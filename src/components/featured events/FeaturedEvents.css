@@ -1,0 +1,142 @@
+.featuredevents {
+  background-color: var(--darkBlue);
+  padding: var(--padding);
+}
+
+.featuredevents__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bgColor);
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.featuredevents__heading a {
+  color: var(--red);
+  font-size: 16px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.featuredevents__heading .tag {
+  color: white;
+  background-color: var(--red);
+  padding: 1rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.featuredevents__heading .link {
+  display: flex;
+  align-items: center;
+}
+
+.featuredevents__heading .link .MuiSvgIcon-root {
+  margin-left: 1rem;
+  color: var(--red);
+  font-size: 18px;
+  padding-right: 1rem;
+}
+
+.featuredevents__list__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bgColor);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.featuredevents__list__item .scores {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.featuredevents__list__item .scores img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.featuredevents__list__item .scores .score {
+  color: var(--fadedWhite);
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.featuredevents__list__item .scores .score#high {
+  color: var(--red);
+}
+
+.featuredevents__list__item .scores span {
+  border: 1px solid var(--red);
+  padding: 0.2rem 0.5rem;
+  color: var(--fadedWhite);
+  font-weight: bolder;
+}
+
+.featuredevents__list__item .league .name {
+  color: var(--red);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.featuredevents__list__item .league {
+  line-height: 2rem;
+}
+
+.featuredevents__list__item .league .cup {
+  color: var(--fadedWhite);
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.featuredevents__list__item .league .date {
+  color: var(--fadedWhite);
+  font-size: 12px;
+}
+
+.featuredevents__list__item .video__link a {
+  text-decoration: none;
+  color: var(--fadedWhite);
+  display: flex;
+  font-size: 14px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .featuredevents {
+    width: 100%;
+    padding: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .featuredevents__list__item {
+    flex-direction: column;
+  }
+
+  .featuredevents__list__item .scores {
+    width: 60%;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .featuredevents__list__item .scores img {
+    width: 40px;
+    height: 40px;
+  }
+  .featuredevents__list__item .league .cup {
+    font-size: 14px;
+  }
+}

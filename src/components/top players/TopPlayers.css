@@ -1,0 +1,119 @@
+.topplayers {
+  padding: var(--padding);
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.topplayers__left .heading {
+  width: 60%;
+}
+
+.header__footer__arrows.topplayers {
+  background-color: var(--red);
+  padding: 6rem;
+}
+
+.header__footer__arrows.topplayers .MuiSvgIcon-root {
+  color: var(--fadedWhite);
+}
+
+.topplayers__right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.topplayers__right__cards {
+  position: relative;
+  /* width: 50%; */
+}
+
+.topplayers__right__cards > div {
+  /* position: absolute; */
+  left: -0.5rem;
+  bottom: -0.5rem;
+}
+
+.topplayers__right__cards .name {
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: var(--fadedWhite);
+}
+
+.topplayers__right__cards .name span {
+  color: var(--red);
+}
+
+.topplayers__right__cards .bottom__text {
+  display: flex;
+  align-items: center;
+}
+
+.topplayers__right__cards .bottom__text .number {
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: var(--fadedWhite);
+  font-size: 24px;
+}
+
+.topplayers__right__cards .bottom__text .desc {
+  color: var(--red);
+  font-size: 14px;
+  margin-left: 1rem;
+  text-transform: uppercase;
+}
+
+.topplayers__right__cards__img {
+  width: 50%;
+  height: 30vh;
+}
+
+.topplayers__right__cards__img > img {
+  /* width: 100%; */
+  height: 100%;
+}
+
+@media screen and (max-width: 1225px) {
+  .topplayers {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  .topplayers__right {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .img {
+    float: right;
+  }
+
+  .header__footer__arrows.topplayers {
+    padding: 0.5rem;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .topplayers__right {
+    width: 60%;
+    justify-content: center;
+  }
+
+  .topplayers__right__cards > div {
+    position: static;
+    left: 1rem;
+    bottom: 1rem;
+  }
+
+  .topplayers__right__cards__img > img {
+    height: 100%;
+    width: 300px;
+    object-fit: cover;
+  }
+}

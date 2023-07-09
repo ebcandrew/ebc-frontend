@@ -1,0 +1,112 @@
+.individual__container {
+  width: 95%;
+  margin: auto;
+  text-align: center;
+}
+
+.individual__container__form h4 {
+  margin: 1rem auto;
+  font-size: 30px;
+  text-transform: capitalize;
+  color: var(--purple);
+}
+
+.individual__container__form {
+  width: 100%;
+}
+
+.individual__container__form form input {
+  width: 30%;
+  outline: none;
+  height: 30px;
+  margin-bottom: 1rem;
+}
+
+.individual__container__form form .gender {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.individual__container__form form .gender div {
+  margin: auto 10px;
+  text-transform: capitalize;
+  width: 5%;
+}
+
+.individual__container__form form .button {
+  width: 20%;
+}
+
+.individual__container__form__create {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.individual__container__form__create a {
+  text-decoration: none;
+  margin-left: 1rem;
+  color: var(--purple);
+}
+
+.individual__container__form form .gender input {
+  max-height: 20px;
+}
+
+.cat__input {
+  cursor: pointer;
+}
+
+.catmodal {
+  width: 20%;
+  padding: 1rem;
+  background-color: var(--grey);
+  position: absolute;
+  bottom: 10rem;
+  right: 20rem;
+}
+
+.catmodal p {
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.catmodal p:hover {
+  color: var(--purple);
+}
+
+.cat__select {
+  width: 30%;
+  height: 30px;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 550px) {
+  .individual__container__form form input {
+    width: 80%;
+  }
+
+  .individual__container__form form .gender div {
+    width: 100%;
+  }
+
+  .catmodal {
+    width: 70%;
+    padding: 1rem;
+    background-color: var(--grey);
+    position: absolute;
+    bottom: 14rem;
+    right: 1rem;
+  }
+
+  .cat__select {
+    width: 80%;
+    height: 30px;
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,70 @@
+.addblog {
+  padding: var(--padding);
+}
+
+.addblog__form {
+  width: 70%;
+  margin: auto;
+}
+
+.addblog__form > div {
+  margin-bottom: 1rem;
+}
+
+.addblog__form > div input {
+  width: 100%;
+  height: 2.3rem;
+  outline: none;
+  background-color: var(--darkBlue);
+  outline: none;
+  border: none;
+  color: var(--fadedWhite);
+}
+
+.addblog__form > div textarea {
+  width: 100%;
+  min-height: 20vh;
+  outline: none;
+  background-color: var(--darkBlue);
+  outline: none;
+  border: none;
+  color: var(--fadedWhite);
+}
+
+#fileInput {
+  width: 200px;
+  height: 200px;
+}
+
+.addblog__form > div p {
+  color: var(--fadedWhite);
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+
+.addblog__form .btn__submit {
+  margin-bottom: 1rem;
+}
+
+.addblog__form .btn__submit .button {
+  width: 20%;
+  padding: 1rem;
+  margin: auto;
+}
+
+.blog__image__preview {
+  width: 100%;
+  height: 50vh;
+}
+
+.blog__image__preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 800px) {
+  .addblog__form {
+    width: 100%;
+  }
+}

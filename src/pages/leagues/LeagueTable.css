@@ -1,0 +1,364 @@
+.leaguetable {
+  padding: var(--padding);
+}
+
+.leaguetable__banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leaguetable__banner__text {
+  width: 30%;
+}
+
+.leaguetable__banner__text h3 {
+  font-weight: bolder;
+  text-transform: capitalize;
+  font-size: 40px;
+  color: var(--fadedWhite);
+}
+
+.leaguetable__banner__text h3 span {
+  color: var(--red);
+}
+
+.leaguetable__banner__img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 70%;
+}
+
+.leaguetable__banner__img img {
+  width: 100%;
+}
+
+.leaguetable__banner__img .header__footer__arrows {
+  width: 10%;
+  margin-bottom: 2rem;
+}
+
+.leaguetable__banner__img .header__footer__arrows img {
+  width: 50%;
+}
+
+.leaguetable__banner__footer {
+  display: flex;
+}
+
+.leaguetable__banner__footer .header__footer__fixtures h3 {
+  color: var(--lightText);
+  text-align: center;
+}
+
+.leaguetable__banner__footer .header__footer__fixtures .header__footer__fixtures__display p {
+  font-weight: bolder;
+  color: var(--fadedWhite);
+  margin: auto 0.3rem;
+}
+
+.leaguetable__banner__footer .header__footer__fixtures .header__footer__fixtures__display p span {
+  color: var(--red);
+  border: none;
+}
+
+.leagues__matchup {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+}
+
+.leagues__matchup div .MuiSvgIcon-root {
+  color: var(--fadedWhite);
+}
+
+.leagues__matchup .arrows {
+  background-color: var(--red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  margin-left: 1rem;
+}
+
+.leagues__body__round {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  align-items: center;
+  margin-left: auto;
+}
+
+.leagues__body__round p:first-child {
+  font-weight: bolder;
+  color: var(--lightText);
+  text-transform: uppercase;
+}
+
+.leagues__body__round p:last-child {
+  font-weight: bolder;
+  color: var(--fadedWhite);
+  text-transform: capitalize;
+  background-color: var(--red);
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  cursor: pointer;
+  width: 30%;
+}
+
+.leagues__body__round p:last-child .MuiSvgIcon-root {
+  font-size: 18px;
+  margin-right: 1rem;
+}
+
+.matchup__item__header {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.matchup__item__header h3 {
+  font-weight: bolder;
+  color: var(--fadedWhite);
+  margin-bottom: 0.5rem;
+}
+
+.leagues__body__matchup__fixtures {
+  background-color: var(--darkBlue);
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+.matchup__item__header p {
+  color: var(--red);
+  font-size: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.matchup__item__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.matchup__item__flex .score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+}
+
+.matchup__item__flex .score p {
+  color: var(--fadedWhite);
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.matchup__item__flex .score p:nth-child(2) {
+  border: 1px solid var(--red);
+  padding: 0.3rem;
+}
+
+.matchup__item__timer {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.matchup__item__timer p {
+  margin: auto 1rem;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.matchup__item__timer p:first-child {
+  color: var(--lightText);
+}
+
+.matchup__item__timer p:last-child {
+  color: var(--fadedWhite);
+  border: 1px solid var(--red);
+  padding: 0.3rem;
+}
+
+.matchup__item__flex .doublecurve {
+  color: var(--fadedWhite);
+  font-weight: bolder;
+  text-transform: uppercase;
+  background-color: var(--red);
+}
+
+.matchup__item__flex,
+.tournament__matchups__fix__card__line {
+  position: relative;
+}
+
+.matchup__item__flex img,
+.tournament__matchups__fix__card__line img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+}
+
+.matchup__item__flex img#first {
+  left: 12rem;
+}
+
+.leagues__table__items {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  justify-content: space-evenly;
+  margin: 2rem 0;
+  background-color: var(--darkBlue);
+  padding: 3rem 1.5rem;
+  flex-wrap: wrap;
+}
+
+.leagues__table__items__user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leagues__table__items__user section .country img {
+  width: 20px;
+  margin: 0 1rem;
+}
+
+.leagues__table__items__user section .country {
+  display: flex;
+  align-items: center;
+}
+
+.leagues__table__items__user section {
+  display: flex;
+  align-items: center;
+}
+
+.leagues__table__items__user section .title {
+  color: var(--red);
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.leagues__table__items__user section .username {
+  color: var(--fadedWhite);
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin: 1rem 0;
+}
+
+.leagues__table__items__user section .date {
+  color: var(--lightText);
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 0.5rem;
+}
+
+.leagues__table__items__dinos img {
+  margin: 0 1rem;
+}
+
+.username.btn {
+  background-color: var(--darkBlue);
+}
+
+.username.btn .button {
+  padding: 1rem;
+  width: 10%;
+}
+
+.leagues__table__items__btn {
+  width: 20%;
+  margin: auto;
+}
+
+.leagues__table__items__btn .button {
+  padding: 0.6rem;
+}
+
+@media screen and (max-width:1280px) {
+  .leaguetable__banner__footer {
+    flex-direction: column;
+
+  }
+}
+
+@media screen and (max-width:880px) {
+  .leaguetable__banner {
+    flex-direction: column;
+  }
+
+  .leaguetable__banner__text {
+    width: 100%;
+  }
+
+  .leaguetable__banner__img {
+    width: 100%;
+  }
+
+  .leaguetable__banner__text h3 {
+    font-size: 30px;
+  }
+
+  .matchup__item__flex img#first {
+    left: 9rem;
+  }
+
+  .leagues__body__round {
+    margin-left: 0;
+  }
+
+  .leagues__body__round p:last-child {
+    width: 50%;
+  }
+
+  .leagues__body__round {
+    width: 100%;
+  }
+
+  .leagues__body__round p:first-child,
+  .leagues__body__round p:last-child,
+  .matchup__item__header h3,
+  .matchup__item__flex .doublecurve,
+  .matchup__item__timer p {
+    font-size: 12px;
+  }
+
+}
+
+@media screen and (max-width:650px) {
+  .matchup__item__flex .score {
+    flex-direction: column;
+  }
+
+  .leagues__table__items__btn {
+    width: 50%;
+  }
+
+  .rsvp .leaguetable__banner .leaguetable__banner__text h3 {
+    margin-bottom: 1rem;
+
+  }
+
+  .leaguetable__banner__text h3 {
+    font-size: 20px;
+  }
+
+  .rsvp .leaguetable__banner .leaguetable__banner__text p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width:520px) {
+  .matchup__item__flex {
+    flex-direction: column;
+  }
+}

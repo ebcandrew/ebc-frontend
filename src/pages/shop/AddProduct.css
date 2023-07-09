@@ -1,0 +1,12 @@
+.catmodal__item {
+  background-color: var(--darkBlue);
+}
+
+.catmodal__item p {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.catmodal__item p:hover {
+  background-color: var(--bgColor);
+}

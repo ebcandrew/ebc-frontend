@@ -1,0 +1,56 @@
+.teammanager .league__banner__1 {
+  width: 60%;
+}
+
+.teammanager .league__banner__1 h3 {
+  width: 100%;
+}
+
+.teammanager__body p.subtext {
+  color: var(--lightText);
+}
+
+.tm__review__btn {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.tm__review__btn .button {
+  width: 30%;
+  padding: 0.7rem;
+  margin: 0.5rem;
+}
+
+.tm__review__btn .button:first-child {
+  background-color: var(--bgColor);
+}
+
+.tm__review__btn .btn__submit{
+  width: 30%;
+}
+.tm__review__btn .btn__submit .button{
+  width: 80%;
+}
+
+.other__items__rules .rule {
+  margin: 4rem 0;
+}
+
+.other__items__rules__btn {
+  width: 50%;
+  margin: auto;
+}
+
+.other__items__rules__btn .button {
+  padding: 0.7rem;
+  width: 30%;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width:690px) {
+
+  .other__items__rules__btn .button {
+    width: 100%;
+  }
+}

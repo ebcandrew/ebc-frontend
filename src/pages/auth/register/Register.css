@@ -1,0 +1,137 @@
+.register {
+  padding: var(--padding);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .register__text { */
+/* width: 50%;
+}
+
+.register__cta {
+  width: 50%;
+} */
+
+.cta__item {
+  display: flex;
+  align-items: center;
+}
+
+.cta__item p {
+  padding: 1rem;
+  width: 10rem;
+  font-weight: bolder;
+}
+
+.cta__item p:first-child .button {
+  width: fit-content;
+  margin: 0;
+}
+
+.cta__item p:last-child .button {
+  text-transform: uppercase;
+  font-size: 14px;
+  background-color: var(--darkBlue);
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+.register__text h3 {
+  text-transform: capitalize;
+  font-weight: bolder;
+  font-size: 3rem;
+  color: white;
+}
+
+.register__text h3 span {
+  color: var(--red);
+}
+
+.register__text p {
+  color: var(--lightText);
+  font-size: clamp(10px, 1rem+10vw, 14px);
+
+  width: 70%;
+  line-height: 2rem;
+}
+
+.register__text a {
+  color: var(--red);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.register__fee__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  margin: 2rem auto;
+}
+
+.register__fee__footer h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: var(--fadedWhite);
+}
+
+.register__fee__footer .button {
+  width: fit-content;
+  padding: 0.5rem 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .register__fee__footer {
+    width: 100%;
+    justify-content: space-around;
+
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .register {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .register__text {
+    width: 75%;
+    margin-bottom: 50px;
+  }
+
+  .register__text p {
+    width: 100%;
+    line-height: 1.5rem;
+  }
+  .register__fee__footer {
+    flex-wrap: wrap;
+    gap: 5px;
+ 
+   }
+ 
+
+}
+
+@media screen and (max-width: 630px) {
+
+
+  .cta__item {
+    flex-direction: column;
+  }
+
+  .register__text h3 {
+    font-size: 1.5rem;
+  }
+
+  .register__text {
+    width: 75%;
+    margin-bottom: 30px;
+    font-size: 0.8rem;
+  }
+
+  .cta__item p:last-child .button {
+    font-size: 10px;
+  }
+
+}

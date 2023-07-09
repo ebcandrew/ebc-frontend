@@ -1,0 +1,148 @@
+.tournamentmanage {
+  padding: var(--padding);
+}
+
+.tournamentmanage .leaguetable__banner__text {
+  width: 50%;
+}
+
+.tournamentmanage .leaguetable__banner__text .button {
+  width: 30%;
+  padding: 0.7rem;
+  margin-top: 1rem;
+}
+
+.tournamentmanage .leaguetable__banner__footer {
+  display: flex;
+  justify-content: right;
+}
+
+.tournamentmanage__main__fix__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 0;
+}
+
+.tournamentmanage__main__fix__item .name {
+  width: 40%;
+}
+
+.tournamentmanage__main__fix__item .name>div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tournamentmanage__main__fix__item .cup img {
+  width: 100px;
+}
+
+.tournamentmanage__main__fix__item .name>p {
+  color: var(--fadedWhite);
+  margin-bottom: 1rem;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.tournamentmanage__main__fix__item .name>div p {
+  color: var(--fadedWhite);
+  text-transform: capitalize;
+}
+
+.tournamentmanage__main__fix__item .name>div p .MuiSvgIcon-root {
+  font-size: 16px;
+  margin-right: 1rem;
+}
+
+.tournamentmanage__main__fix__item .btn {
+  width: 20%;
+}
+
+.tournamentmanage__main__fix__item .btn .button {
+  padding: 1rem;
+  width: 60%;
+}
+
+.tournamentmanage__main__fix__button {
+  width: 40%;
+  margin: auto;
+}
+
+.tournamentmanage__main__fix__button .button {
+  width: 30%;
+  padding: 0.7rem;
+  margin: auto;
+}
+
+.tournamentmanage #btn .button {
+  padding: 0.7rem;
+}
+
+.tournamentmanage__upcoming {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tournamentmanage__upcoming__item {
+  position: relative;
+}
+
+.tournamentmanage__upcoming__item .others {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.tournamentmanage__upcoming__item .others p:first-child {
+  color: var(--red);
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.tournamentmanage__upcoming__item .others p:last-child {
+  color: var(--fadedWhite);
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+
+@media screen and (max-width: 850px) {
+  .tournamentmanage .leaguetable__banner__footer {
+    justify-content: space-around;
+  }
+
+  .tournamentmanage .leaguetable__banner__text {
+    width: 100%;
+  }
+
+  .tournamentmanage .leaguetable__banner__text .button{
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .tournamentmanage__main__fix__item .cup img{
+    width: 50px;
+  }
+
+  .tournamentmanage__main__fix__item{
+    flex-direction: column;
+    width: 100%;
+  }
+  .tournamentmanage__main__fix__item .name{
+    width: 80%;
+  }
+  .tournamentmanage__main__fix__item .btn{
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 100px;
+  }
+
+
+}

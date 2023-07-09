@@ -1,0 +1,213 @@
+.profile2__info {
+  background-color: var(--lightGrey);
+  padding: var(--padding);
+}
+
+.profile__banner__img {
+  width: 30%;
+  height: 100vh;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.profile__banner__img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: all 0.3s;
+  display: block;
+  transform: scale(1);
+}
+
+.profile__banner__img:hover > img {
+  transform: scale(1.1);
+}
+
+.profile2__info__stats__section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.profile2__info__stats__section section {
+  width: 30%;
+  margin: 2rem;
+}
+
+.profile2__info__stats__section section > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile2__info__stats__section section h3 {
+  color: var(--red);
+  text-transform: uppercase;
+}
+
+.profile2__info__stats__section section p {
+  color: var(--fadedWhite);
+  margin-top: 1rem;
+  text-transform: capitalize;
+}
+
+.profile2__info__stats__section section span .MuiSvgIcon-root {
+  font-size: 18px;
+}
+
+.profile2__info__stats__section #icon {
+  background-color: var(--red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+.profile2__info__stats__section #icon .MuiSvgIcon-root {
+  color: var(--fadedWhite);
+}
+
+.profile2__info__stats__others {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.profile2__info__stats__others > section {
+  width: 50%;
+}
+
+.profile2__info__stats__others > section h3 {
+  color: var(--red);
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+
+.profile2__info__stats__others__socials > div {
+  display: flex;
+}
+
+.profile2__info__stats__others__socials > div .MuiSvgIcon-root {
+  color: var(--fadedWhite);
+  margin-right: 1rem;
+}
+
+.profile2__info__stats__others__socials > div p:last-child {
+  color: var(--fadedWhite);
+  text-transform: capitalize;
+}
+
+.profile2__info__stats__others .friends p {
+  color: var(--fadedWhite);
+}
+
+.profile2__info__stats__others .radio > div {
+  display: flex;
+}
+
+.profile2__info__stats__others .radio > div p {
+  margin-right: 2rem;
+  color: var(--fadedWhite);
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+
+.profile2__info__stats__others .radio > div p input {
+  margin-right: 1rem;
+  color: var(--darkBlue);
+}
+
+.profile2__info__stats__others .dinos .leagues__matchup .heading {
+  color: var(--red);
+}
+
+.dinos .dinos__items__main {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.dinos .dinos__items__main p {
+  width: 30%;
+}
+
+.dinos .dinos__items__main p img {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.profile2__terms {
+  color: var(--fadedWhite);
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.profile2__terms input {
+  margin-right: 1rem;
+}
+
+.profile2__btns {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+}
+
+.profile2__btns .button {
+  width: 70%;
+  padding: 0.8rem;
+  margin: 2rem;
+}
+.profile__banner__img img {
+  width: 100%;
+}
+
+.input_field {
+  border: none;
+  background-color: var(--darkBlue);
+  outline: none;
+  width: 18rem;
+  height: 1.6rem;
+  color: white;
+  padding: 0.5rem 0;
+}
+
+@media screen and (max-width: 580px) {
+  .profile2__info__stats__others {
+    flex-direction: column;
+  }
+
+  .profile2__info__stats__others > section {
+    width: 100%;
+  }
+
+  .profile2__btns {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .profile2__btns .button {
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .profile2__info__stats__section {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .profile2__info__stats__section {
+    justify-content: space-between;
+  }
+}

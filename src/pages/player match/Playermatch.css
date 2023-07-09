@@ -1,0 +1,50 @@
+.playermatch {
+  padding: var(--padding);
+}
+
+.playermatch .leaguetable__banner__text {
+  width: 50%;
+}
+
+.playermatch .leaguetable__banner__text h3 {
+  width: 60%;
+}
+
+.playermatch .leaguetable__banner__text p {
+  width: 80%;
+  color: var(--lightText);
+  margin: 1rem 0;
+}
+
+.playermatch .leaguetable__banner__text .button {
+  width: 40%;
+  padding: 0.5rem;
+}
+
+.playermatch .username .button {
+  width: 20%;
+  margin-top: 2rem;
+  padding: 0.5rem;
+}
+
+@media screen and (max-width:880px) {
+
+  .playermatch .leaguetable__banner__text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .playermatch .leaguetable__banner__text h3 {
+    width: 100%;
+  }
+
+  .playermatch .leaguetable__banner__text p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:475px) {
+  .playermatch .leaguetable__banner__text .button{
+    width: 80%;
+  }
+}

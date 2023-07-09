@@ -1,0 +1,298 @@
+.page58_h2_div {
+  text-align: center;
+  margin-top: 50px;
+
+}
+
+.chart .page58_table {
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.page58_table thead tr {
+  background-color: #558ebd;
+  color: #000000;
+  text-align: center;
+}
+
+.page58_table th,
+.page58_table td {
+  padding: 5px 15px;
+  border-bottom: 1px solid #706f6f;
+  border-right: 1px solid #706f6f;
+}
+
+.page58_rows td {
+  border-bottom: 1px solid #706f6f;
+  border-right: 1px solid #706f6f;
+  text-align: center;
+}
+
+.page58_h2_div h2 {
+  color: var(--fadedWhite);
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+
+
+}
+
+.page55_maindiv {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.page55_subdiv1 {
+  background-color: var(--fadedWhite);
+}
+
+.page55_subdiv2 {
+  background-color: rgb(43, 43, 43);
+}
+
+.page55_subdiv3 {
+  background-color: rgb(167, 182, 33);
+}
+
+.page55_subdiv1,
+.page55_subdiv2,
+.page55_subdiv3 {
+  width: 500px;
+  height: 809px;
+}
+
+
+
+.page56_maindiv {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.page56_subdiv1 {
+  background-color: var(--fadedWhite);
+}
+
+.page56_subdiv2 {
+  background-color: var(--red);
+}
+
+.page56_subdiv3 {
+  background-color: rgb(43, 43, 43);
+}
+
+.page56_subdiv1,
+.page56_subdiv2,
+.page56_subdiv3 {
+  width: 500px;
+  height: 809px;
+}
+
+@media screen and (max-width: 850px) {
+  .page56_maindiv {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+.page57_maindiv {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.page57_subdiv1,
+.page57_subdiv3 {
+  width: 500px;
+  height: 1300px;
+}
+
+.page57_subdiv1,
+.page57_subdiv3 {
+  background-color: var(--fadedWhite);
+}
+
+.page57_subdiv1 div,
+.page57_subdiv3 div {
+  border: 8px solid black;
+  width: 400px;
+  height: 1200px;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 45px;
+}
+
+.page57_subdiv2 {
+  background-color: var(--fadedWhite);
+}
+
+.page57_ebc {
+  background-color: rgb(165, 155, 155);
+  width: 1000px;
+  height: 550px;
+  margin-top: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.page57_ebc img {
+  /* height: 100px; */
+}
+
+.page57_valarant {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page57_valarant_yellow,
+.page57_valarant_blue {
+  width: 225px;
+  height: 150px;
+  margin-top: 20px;
+}
+
+.page57_valarant_yellow h3,
+.page57_valarant_blue h3 {
+  color: var(--fadedWhite);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.page57_valarant_yellow {
+  background-color: rgb(218, 218, 40);
+}
+
+.page57_valarant_blue {
+  background-color: rgb(58, 58, 218);
+}
+
+.page57_red_strip {
+  width: auto;
+  height: 100px;
+  background-color: var(--red);
+  margin-top: 20px;
+}
+
+.page57_knightGaming {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1750px) {
+  .page57_maindiv {
+    flex-wrap: wrap;
+  }
+
+  .page57_knightGaming {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .page57_ebc {
+    width: auto;
+  }
+
+  .page57_ebc img {
+    width: 150px;
+  }
+
+  .page57_subdiv1,
+  .page57_subdiv3 {
+    width: auto;
+    height: auto;
+  }
+}
+
+.page58_maindiv h2 {
+  color: black;
+}
+
+.page58_h2_div {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.page58_table {
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.page58_table thead tr {
+  background-color: #558ebd;
+  color: #000000;
+  text-align: center;
+}
+
+.page58_table th,
+.page58_table td {
+  padding: 5px 15px;
+  border-bottom: 1px solid #706f6f;
+  border-right: 1px solid #706f6f;
+}
+
+.page58_rows td {
+  border-bottom: 1px solid #706f6f;
+  border-right: 1px solid #706f6f;
+  text-align: center;
+}
+
+.page59_maindiv {}
+
+.page59_p {
+  justify-content: center;
+  margin: 0 auto;
+  width: 500px;
+
+}
+
+.page59_p p {
+  color: var(--fadedWhite);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.page61_maindiv {
+  height: 2267px;
+}
+
+.page62_maindiv {
+  height: 2267px;
+}
+
+.page63_maindiv {
+  height: 2267px;
+}
+
+.page64_maindiv {
+  height: 2267px;
+}
+
+.table_wrapper {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+
+@media screen and (max-width: 850px) {
+  .page55_maindiv {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .page59_p, .page58_h2_div h2 {
+    width: 100%;
+    /* margin: 0 20px; */
+    font-size: 14px;
+  }
+  .page59_p p{
+    font-size: 12px;
+  }
+}

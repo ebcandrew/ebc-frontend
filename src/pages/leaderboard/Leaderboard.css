@@ -1,0 +1,151 @@
+.leaderboard {
+  padding: var(--padding);
+}
+
+.leaderboard__btns {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  justify-content: center;
+  margin: auto;
+}
+
+.leaderboard__btns .btn {
+  width: 30%;
+  margin: 1rem;
+}
+
+.leaderboard__btns .btn .button {
+  padding: 0.8rem;
+}
+
+.leaderboard__btns .btn#first .button:first-child {
+  background-color: var(--red);
+}
+
+.leaderboard__btns .btn .button {
+  background-color: var(--darkBlue);
+}
+
+.btn > a {
+  text-decoration: none;
+}
+
+.leaderboard__para {
+  color: var(--lightText);
+  width: 60%;
+  margin: auto;
+  line-height: 1.5rem;
+}
+
+.leaderboard table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.leaderboard th {
+  color: var(--fadedWhite);
+  text-align: center;
+  padding: 0.5rem;
+  text-transform: uppercase;
+}
+
+.leaderboard td {
+  background-color: var(--darkBlue);
+  color: var(--fadedWhite);
+  text-align: center;
+  padding: 2rem 0.5rem;
+}
+
+.leaderboard th:nth-child(2) {
+  width: 30%;
+}
+
+.leaderboard table td p.country img {
+  width: 20%;
+}
+
+.leaderboard #cstate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leaderboard .profile {
+  display: flex;
+  align-items: center;
+}
+
+.leaderboard .name h3 {
+  text-transform: uppercase;
+  margin: 0 0.5rem;
+  font-size: 18px;
+}
+
+.leaderboard .name p {
+  color: var(--lightText);
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+.leaderboard .profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.leaderboard th .button {
+  padding: 0.5rem;
+}
+
+.leaderboard td#rank {
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: var(--red);
+}
+
+.leaderboard__loadmore {
+  width: 20%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.leaderboard__loadmore .button {
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 750px) {
+  .leaderboard__btns {
+    width: 100%;
+  }
+  .leaderboard__para {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .leaderboard__btns {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .leaderboard__para {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .leaderboard__btns .btn {
+    width: 80%;
+  }
+}
+
+.table_wrapper {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}

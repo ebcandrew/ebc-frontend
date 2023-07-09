@@ -1,0 +1,40 @@
+.roundStats_maindiv {
+    color: rgb(222, 223, 224);
+    padding-top: 150px;
+}
+
+.roundStats_maindiv h4 {
+    background-color: var(--fadedWhite);
+    color: rgb(43, 43, 43);
+    font-size: 20px;
+    width: 35%;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 25px;
+
+}
+
+
+.roundStats_table {
+    width: 100%;
+}
+
+.roundStats_table tr td {
+    padding: 10px 12px;
+}
+
+.stats {
+    font-weight: 900;
+}
+
+@media screen and (max-width:425px) {
+    .roundStats_maindiv h4 {
+        width: 50%;
+        font-size: 16px;
+    }
+
+    .stats {
+        font-size: 13px;
+    }
+}

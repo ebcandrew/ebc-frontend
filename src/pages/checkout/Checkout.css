@@ -1,0 +1,27 @@
+.checkout {
+  width: 90%;
+  margin: 3rem auto;
+}
+
+.checkout__img {
+  width: 80%;
+  height: 50vh;
+}
+
+.checkout__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.checkout .button {
+  width: 40%;
+  padding: 0.6rem;
+  margin-top: 1rem;
+}
+
+.checkout h3 {
+  color: var(--fadedWhite);
+  text-transform: uppercase;
+  margin-top: 1rem;
+}

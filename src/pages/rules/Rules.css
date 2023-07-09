@@ -1,0 +1,17 @@
+.rules__load__more {
+  width: 50%;
+  margin: auto;
+}
+
+.rules__load__more .button {
+  width: 30%;
+  margin: auto;
+  padding: 0.7rem;
+}
+
+
+@media screen and (max-width: 500px) {
+  .rules__load__more .button {
+    width:100%;
+  }
+}

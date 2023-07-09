@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  --bgColor: #1e2229;
+  --padding: 2rem;
+  --lightText: rgba(238, 238, 238, 0.4);
+  --red: #e00016;
+  --fadedWhite: #eeeeee;
+  --darkBlue: rgba(25, 29, 35, 0.9);
+  background-color: var(--bgColor);
+  --nunito: "Nunito Sans", sans-serif;
+  font-family: var(--nunito);
+  --containerWidth: 90%;
+  --footerColor: rgba(30, 34, 41, 0.8);
+  --green: #018752;
+  --lightGreen: #2bce02;
+  --orange: #ff4825;
+  --lightGrey: #222831;
+  --blogLinear: rgba(0, 0, 0, 0.8);
+}
+
+/* @media (max-width: 550px) {
+  .App {
+    width: 80%;
+  }
+} */

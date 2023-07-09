@@ -1,0 +1,175 @@
+.league {
+  padding: var(--padding);
+}
+
+.league__btn {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.league__btn p {
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.league__btn p .button {
+  padding: 0.5rem;
+  background-color: transparent;
+}
+
+.league__table table {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.league__table th {
+  width: 100rem;
+  text-align: center;
+  padding: 0.5em;
+  margin: 1rem auto;
+}
+
+.league__table table td {
+  width: 100rem;
+  text-align: center;
+  background-color: var(--darkBlue);
+  padding: 0.5em;
+}
+
+.league__table tr:first-child {
+  color: var(--fadedWhite);
+  text-transform: capitalize;
+}
+
+.lea section {
+  display: flex;
+  align-items: center;
+}
+
+.lea td {
+  /* width: 10rem; */
+  width: 20rem;
+
+  text-align: center;
+}
+
+.lea section p:last-child img {
+  width: 30px;
+  height: 20px;
+}
+
+.lea section .username {
+  color: var(--fadedWhite);
+  font-weight: bolder;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+#banned {
+  background-color: var(--red);
+}
+
+.clubimg img {
+  width: 50%;
+}
+
+.league__banner {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.league__banner__2 {
+  width: 100%;
+}
+
+.league__banner>div img {
+  width: 100%;
+}
+
+.league__banner__1 h3 {
+  color: var(--fadedWhite);
+  font-size: 50px;
+  text-transform: capitalize;
+  width: 30%;
+}
+
+.league__banner__1 h3 span {
+  color: var(--red);
+}
+
+.league__banner__1__text {
+  color: var(--lightText);
+  margin: 1rem auto;
+}
+
+.league__banner__1 .button {
+  width: fit-content;
+  padding: 0.5rem;
+}
+
+.league__banner__3 {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.league__banner__3 .header__footer__arrows img {
+  width: 20px;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width:950px) {
+  .league__banner {
+    flex-direction: column;
+  }
+
+  .league__banner__1 .button {
+    margin-bottom: 20px;
+  }
+
+  .league__banner__1 h3 {
+    width: 100%;
+  }
+
+  .lea td {
+    width: 10rem;
+
+  }
+  .league__banner{
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width:650px) {
+  .lea section {
+    flex-direction: column;
+  }
+
+  .clubimg img {
+    width: 75%;
+  }
+
+  .league__flag img {
+    width: 50%;
+  }
+  .league__banner__1 h3{
+    font-size: 30px;
+  }
+  .league__banner__1__text{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width:520px) {
+
+  .clubimg img {
+    width: 50%;
+  }
+
+  .league__flag img {
+    width: 30%;
+  }
+}
