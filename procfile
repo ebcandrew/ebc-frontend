@@ -1,1 +1,1 @@
-web: npm run start
+web: npm install react-facebook-login --legacy-peer-deps && npm run start
