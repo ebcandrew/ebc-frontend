@@ -1,6 +1,6 @@
 {
   "name": "export",
-  "homepage": "https://localhost:3000",
+  "homepage": "https://knight-esprots-a05c35805680.herokuapp.com",
   "version": "0.1.0",
   "private": true,
   "devServer": {

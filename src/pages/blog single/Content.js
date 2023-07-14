@@ -49,10 +49,10 @@ function Content() {
 			return formattedDate;
 	};
 
-  const PF = "http://localhost:5000/blogs/";
-  // const PF = `${process.env.REACT_APP_PUBLIC_FOLDER_PUB}/blogs/`;
-  // const PFU = `${process.env.REACT_APP_PUBLIC_FOLDER_PUB}/users/`;
-  const PFU = "http://localhost:5000/users/";
+  // const PF = "http://localhost:5000/blogs/";
+  const PF = `${process.env.REACT_APP_API_PUB}/blogs/`;
+  const PFU = `${process.env.REACT_APP_API_PUB}/users/`;
+  // const PFU = "http://localhost:5000/users/";
 
   const { id } = useParams();
 

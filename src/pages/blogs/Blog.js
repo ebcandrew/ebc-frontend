@@ -47,8 +47,8 @@ function Blog() {
   const [blogRelated, setBlogRelated] = useState([]);
   const [userDetails, setUserDetails] = useState([]);
 
-  const PF = "http://localhost:5000/blogs/";
-  // const PF = `${process.env.REACT_APP_PUBLIC_FOLDER_PUB}/blogs/`;
+  // const PF = "http://localhost:5000/blogs/";
+  const PF = `${process.env.REACT_APP_API_PUB}/blogs/`;
   // const url = "http://localhost:5000";
 
   const formatDate = (dateString) => {
@@ -57,7 +57,7 @@ function Blog() {
     const formattedDate = date.toLocaleDateString("en-US", options);
     return formattedDate;
   }
-  
+
 
   const url = process.env.REACT_APP_API_PUB_SOCIALS;
 

@@ -13,7 +13,7 @@ function Regional() {
   const [regional, setRegional] = useState([]);
 
   // const PF = "http://localhost:5000/imgs/users/";
-  const PF = `${process.env.REACT_APP_PUBLIC_FOLDER_PUB}/users/`;
+  const PF = `${process.env.REACT_APP_API_PUB}/users/`;
 
   const defaultPic =
     "https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-25.jpg";

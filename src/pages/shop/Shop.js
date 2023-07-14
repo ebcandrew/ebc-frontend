@@ -8,7 +8,7 @@ import { CircularProgress } from "@mui/material";
 
 function Shop() {
   // const PF = "http://localhost:5000/imgs/products/";
-  const PF = `${process.env.REACT_APP_PUBLIC_FOLDER_PUB}/products/`;
+  const PF = `${process.env.REACT_APP_API_PUB}/products/`;
 
   const [error, setError] = useState(Boolean);
   const [errorMessage, setErrorMessage] = useState("");
@@ -381,7 +381,7 @@ function Shop() {
                 >
                   <Button text={"purchase now"} />
                 </a>
-                {/* 
+                {/*
                 {userDetails.role === "admin" && (
                   <>
                     <a

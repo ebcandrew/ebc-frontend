@@ -47,7 +47,7 @@ function Login() {
   const handleLogin = async (link) => {
     try {
       // window.location.href = `https://api.ebc.gg${link}`;
-      window.location.href = `http://localhost:5000${link}`;
+      window.location.href = `${process.env.REACT_APP_PUBLIC_FOLDER_PUB}${link}`;
 
       // await axios
       //   .get(`http://localhost:5000/auth/google/callback`)

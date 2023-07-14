@@ -6,8 +6,8 @@ import "./Featured.css";
 
 function Featured() {
   const [featured, setFeatured] = useState([]);
-  const PF = "http://localhost:5000/blogs/";
-  // const PF = `${process.env.REACT_APP_PUBLIC_FOLDER_PUB}/blogs/`;
+  // const PF = "http://localhost:5000/blogs/";
+  const PF = `${process.env.REACT_APP_API_PUB}/blogs/`;
 
   const formatDate = (dateString) => {
 		const date = new Date(dateString);
