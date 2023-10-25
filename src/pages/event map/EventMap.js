@@ -81,8 +81,8 @@ function EventMap() {
           </div>
 
           <div className="eventmap__tournament">
+            div
             <h3>tournament details</h3>
-
             <div className="eventmap__tournament__details">
               <p>
                 <MapIcon />
@@ -92,7 +92,6 @@ function EventMap() {
 
               <p>lorem ipsum dotor</p>
             </div>
-
             <div className="eventmap__tournament__details">
               <p>
                 <CalendarMonthIcon />
@@ -112,21 +111,23 @@ function EventMap() {
             {pinned.map((fix, index) => {
               return (
                 <>
-                  <h3>{fix.title} </h3>
+                  <div className="FixtureWrapper">
+                    <h3>{fix.title} </h3>
 
-                  <div className="fixture__row" key={index}>
-                    <p className="game">{fix.user1game}</p>
+                    <div className="fixture__row" key={index}>
+                      <p className="game">{fix.user1game}</p>
 
-                    <p className="img">
-                      <img src={fix.user1img} alt="" />
-                    </p>
+                      <p className="img">
+                        <img src={fix.user1img} alt="" />
+                      </p>
 
-                    <p className="verses">vs</p>
+                      <p className="verses">vs</p>
 
-                    <p className="img">
-                      <img src={fix.user2img} alt="" />
-                    </p>
-                    <p className="game">{fix.user2game}</p>
+                      <p className="img">
+                        <img src={fix.user2img} alt="" />
+                      </p>
+                      <p className="game">{fix.user2game}</p>
+                    </div>
                   </div>
                 </>
               );

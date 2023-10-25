@@ -1,17 +1,17 @@
 .rsvp {
   padding: var(--padding);
 }
-.rsvp_time{
+.rsvp_time {
   align-items: center;
   display: flex;
   justify-content: space-around;
 }
-.rsvp_time_content{
+.rsvp_time_content {
   color: var(--fadedWhite);
   font-weight: bolder;
   margin: 0 20px;
 }
-.rsvp_time_content span{
+.rsvp_time_content span {
   color: var(--red);
   border: none;
 }
@@ -68,7 +68,7 @@
 }
 
 .rsvp__main__right__frame {
-  background-color: var(--darkBlue);
+  background-color: var(--BTNSecondary);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -100,14 +100,14 @@
   font-size: 14px;
 }
 
-.rsvp .tournament__fixtures__card__logo{
+.rsvp .tournament__fixtures__card__logo {
   width: 100px;
   height: 100px;
   padding: 0;
   overflow: hidden;
 }
 
-.rsvp .tournament__fixtures__card__logo img{
+.rsvp .tournament__fixtures__card__logo img {
   height: 100%;
   width: 100%;
 }

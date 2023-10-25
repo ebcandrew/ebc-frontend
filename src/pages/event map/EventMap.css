@@ -40,6 +40,12 @@
   justify-content: space-between;
 }
 
+.FixtureWrapper {
+  background-color: var(--BTNSecondary);
+  padding: 15px;
+  margin-top: 10px;
+}
+
 .eventmap__pinned {
   display: flex;
   justify-content: space-between;
@@ -47,17 +53,12 @@
 
 .eventmap__pinned > div {
   width: 40%;
-  
-
 }
 
 .fixture__row img {
   width: 50px;
   margin: 0 7px;
-
 }
-
-
 
 .eventmap__pinned .eventmap__pinned__indie h3,
 .eventmap__fixes h3 {
@@ -66,9 +67,6 @@
   color: var(--fadedWhite);
   text-transform: uppercase;
 }
-
-
-
 
 .eventmap__fixes {
   color: var(--red);
@@ -105,28 +103,26 @@
   text-transform: uppercase;
 }
 
-
 @media screen and (max-width: 1080px) {
-  .eventmap__pinned{
+  .eventmap__pinned {
     justify-content: space-around;
   }
-  
 }
 
-
 @media screen and (max-width: 850px) {
-  .eventmap__pinned{
+  .eventmap__pinned {
     flex-direction: column;
   }
-  .eventmap__pinned__indie{
-    margin:  0 auto;
+  .eventmap__pinned__indie {
+    margin: 0 auto;
   }
   .eventmap__pinned > div {
     width: 100%;
   }
   .eventmap__mapfooter > p,
-  .eventmap__pinned .eventmap__pinned__indie h3, .eventmap__fixes h3 
-   ,.eventmap__tournament__details  {
+  .eventmap__pinned .eventmap__pinned__indie h3,
+  .eventmap__fixes h3,
+  .eventmap__tournament__details {
     font-size: 12px;
   }
 }

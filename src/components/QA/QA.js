@@ -6,22 +6,27 @@ function QA() {
   const questions = [
     {
       title: "WHAT IS IN IT FOR THE PLAYERS?",
-      desc: "Nulla rutrum sem turpis, at pretium quam porttitor in. Integer sodales at enim et blandit. Aliquam dignissim vestibulum hendrerit. Quisque dapibus blandit metus.",
+      desc: `EBC is committed to enhancing the player experience by 
+                offering a range of incentives, including cash prizes, trophies,
+                and other exciting rewards.`,
     },
-
     {
       title: "how do i sign up?",
-      desc: "Nulla rutrum sem turpis, at pretium quam porttitor in. Integer sodales at enim et blandit. Aliquam dignissim vestibulum hendrerit. Quisque dapibus blandit metus.",
+      desc: `2. Locate the Sign-Up Button: Look for a prominent "Sign Up"
+                or "Register" button on the homepage. This button is typically
+                found in the top right corner or center of the page.`,
     },
-
     {
       title: "what are your services?",
-      desc: "Nulla rutrum sem turpis, at pretium quam porttitor in. Integer sodales at enim et blandit. Aliquam dignissim vestibulum hendrerit. Quisque dapibus blandit metus.",
+      desc: `Nulla rutrum sem turpis, at pretium quam porttitor in. 
+                Integer sodales at enim et blandit. Aliquam dignissim vestibulum hendrerit.
+                Quisque dapibus blandit metus.`,
     },
-
     {
       title: "how is your model suitable",
-      desc: "Nulla rutrum sem turpis, at pretium quam porttitor in. Integer sodales at enim et blandit. Aliquam dignissim vestibulum hendrerit. Quisque dapibus blandit metus.",
+      desc: `Nulla rutrum sem turpis, at pretium quam porttitor in. 
+                Integer sodales at enim et blandit. Aliquam dignissim vestibulum hendrerit.
+                Quisque dapibus blandit metus.`,
     },
   ];
   return (

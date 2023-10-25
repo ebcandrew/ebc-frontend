@@ -24,10 +24,10 @@ import Curved from "../../components/button/Curved";
 import Button from "../../components/button/Button";
 
 function LeagueTable() {
-  useEffect(()=>{
+  useEffect(() => {
 
-  },[])
-  
+  }, [])
+
   const matchUps = [
     {
       user1name: "username",
@@ -98,7 +98,7 @@ function LeagueTable() {
       country: AD,
       profile: Profile,
       type: "knight gaming",
-      dinos: [Arts, Arts, Arts, Arts, Arts, Arts, Arts],
+      dinos: [Arts, Arts, Arts, Arts, Arts, Arts],
     },
 
     {
@@ -108,7 +108,7 @@ function LeagueTable() {
       country: AD,
       profile: Profile,
       type: "knight gaming",
-      dinos: [Arts, Arts, Arts, Arts, Arts, Arts, Arts],
+      dinos: [Arts, Arts, Arts, Arts, Arts, Arts],
     },
 
     {
@@ -118,7 +118,7 @@ function LeagueTable() {
       country: AD,
       profile: Profile,
       type: "knight gaming",
-      dinos: [Arts, Arts, Arts, Arts, Arts, Arts, Arts],
+      dinos: [Arts, Arts, Arts, Arts, Arts, Arts],
     },
 
     {
@@ -128,7 +128,7 @@ function LeagueTable() {
       country: AD,
       profile: Profile,
       type: "knight gaming",
-      dinos: [Arts, Arts, Arts, Arts, Arts, Arts, Arts],
+      dinos: [Arts, Arts, Arts, Arts, Arts, Arts],
     },
 
     {
@@ -138,7 +138,7 @@ function LeagueTable() {
       country: AD,
       profile: Profile,
       type: "knight gaming",
-      dinos: [Arts, Arts, Arts, Arts, Arts, Arts, Arts],
+      dinos: [Arts, Arts, Arts, Arts, Arts, Arts],
     },
 
     {
@@ -148,7 +148,7 @@ function LeagueTable() {
       country: AD,
       profile: Profile,
       type: "knight gaming",
-      dinos: [Arts, Arts, Arts, Arts, Arts, Arts, Arts],
+      dinos: [Arts, Arts, Arts, Arts, Arts, Arts],
     },
   ];
 

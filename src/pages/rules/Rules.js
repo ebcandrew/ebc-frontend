@@ -10,17 +10,20 @@ function Rules() {
       <div className="tournament__header">
         <div className="tournament__text">
           <h3>
-            our -<span>rules</span>
+            our <span>rules</span>
           </h3>
 
           <p>
-            Nulla rutrum sem turpis, at pretium quam porttitor in. Integer
-            sodales at enim et blandit. Aliquam dignissim vestibulum hendrerit.
+            Welcome back, seasoned players! We know you're eager to dive back
+            into the gaming action, and we've made it easier than ever to get
+            started. Say goodbye to the hassle of remembering usernames and
+            passwords, because now you can effortlessly log in using your
+            favorite social media accounts
           </p>
         </div>
 
         <div className="tournament__image">
-          <img src={Tourna} alt="" />
+          <img src={Tourna} style={{ width: "100%" }} alt="" />
         </div>
       </div>
 
@@ -31,7 +34,6 @@ function Rules() {
 
         <div className="other__items">
           <h3>rule 1 name</h3>
-
           <p>
             No Rule Changes: No modifications, additions, or subtractions to
             these standardized rules may be enacted or enforced by Tournament
@@ -149,17 +151,11 @@ function Rules() {
       <div className="register__fee__footer">
         <h3>Downloads:</h3>
 
-        <p>
-          <Button text={"fines"} />
-        </p>
+        <Button text={"fines"} />
 
-        <p>
-          <Button text={"waivers"} />
-        </p>
+        <Button text={"waivers"} />
 
-        <p>
-          <Button text={"download rules pdf"} />
-        </p>
+        <Button text={"download rules pdf"} />
       </div>
     </div>
   );

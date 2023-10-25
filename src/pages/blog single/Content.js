@@ -43,16 +43,16 @@ function Content() {
   const [successMessage, setSuccessMessage] = useState("");
 
   const formatDate = (dateString) => {
-			const date = new Date(dateString);
-			const options = { year: "numeric", month: "long", day: "numeric" };
-			const formattedDate = date.toLocaleDateString("en-US", options);
-			return formattedDate;
-	};
+    const date = new Date(dateString);
+    const options = { year: "numeric", month: "long", day: "numeric" };
+    const formattedDate = date.toLocaleDateString("en-US", options);
+    return formattedDate;
+  };
 
-  // const PF = "http://localhost:5000/blogs/";
-  const PF = `${process.env.REACT_APP_API_PUB}/blogs/`;
-  const PFU = `${process.env.REACT_APP_API_PUB}/users/`;
-  // const PFU = "http://localhost:5000/users/";
+  const PF = "http://localhost:5000/blogs/";
+  // const PF = `${process.env.REACT_APP_PUBLIC_FOLDER_PUB}/blogs/`;
+  // const PFU = `${process.env.REACT_APP_PUBLIC_FOLDER_PUB}/users/`;
+  const PFU = "http://localhost:5000/users/";
 
   const { id } = useParams();
 
@@ -73,10 +73,12 @@ function Content() {
       };
 
       const fetchPost = async () => {
-        await axios.get(`/blogs/get/related?author=${blogDetails.author}`).then((res) => {
-          console.log(res.data?.data);
-          setBlogPost(res.data?.data);
-        });
+        await axios
+          .get(`/blogs/get/related?author=${blogDetails.author}`)
+          .then((res) => {
+            console.log(res.data?.data);
+            setBlogPost(res.data?.data);
+          });
       };
 
       fetchUser();
@@ -123,27 +125,23 @@ function Content() {
               <span>{blogDetails.title}</span>
             </h3>
 
-            {
-              userDetails?.role === "admin"
-              &&
-              userDetails?._id === blogDetails?.userId
-              &&
-              (
-              <>
-                <h3>
-                  <a
-                    style={{ textDecoration: "none" }}
-                    href={`/editblog/${id}`}
-                  >
-                    <Button text={"edit"} />
-                  </a>{" "}
-                </h3>
+            {userDetails?.role === "admin" &&
+              userDetails?._id === blogDetails?.userId && (
+                <>
+                  <h3>
+                    <a
+                      style={{ textDecoration: "none" }}
+                      href={`/editblog/${id}`}
+                    >
+                      <Button text={"edit"} />
+                    </a>{" "}
+                  </h3>
 
-                <h3 onClick={() => handleBlogDelete(id)}>
-                  <Button text={"delete"} />
-                </h3>
-              </>
-            )}
+                  <h3 onClick={() => handleBlogDelete(id)}>
+                    <Button text={"delete"} />
+                  </h3>
+                </>
+              )}
           </div>
 
           <p>{blogDetails.description}</p>
@@ -153,7 +151,11 @@ function Content() {
 
         <div className="tournament__image">
           <img
-            src={PF + blogDetails.thumbnail}
+            src={
+              // PF +
+
+              blogDetails.thumbnail
+            }
             alt=""
             crossOrigin="anonymous"
           />
@@ -169,9 +171,12 @@ function Content() {
             <div className="content__body__heading__profile">
               <p>
                 <img
-                  src={PFU + userDetails.profilePhoto}
+                  src={
+                    // PFU +
+                    userDetails.profilePhoto
+                  }
                   alt=""
-                  crossOrigin="anonymous"
+                  // crossOrigin="anonymous"
                 />
               </p>
 
@@ -238,9 +243,12 @@ function Content() {
             <div className="content__related__item" key={index}>
               <a href={`/blog/${relate._id}`}>
                 <img
-                  src={PF + relate.thumbnail}
+                  src={
+                    // PF +
+                    relate.thumbnail
+                  }
                   alt=""
-                  crossOrigin="anonymous"
+                  // crossOrigin="anonymous"
                 />
               </a>
             </div>

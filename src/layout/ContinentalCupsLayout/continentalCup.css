@@ -1,0 +1,61 @@
+.ContinentalHeroSection {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.ContinentalCupContentSection {
+  width: 620px;
+  margin-left: 10rem;
+}
+
+.ContentTitle {
+  color: white;
+  font-weight: 700;
+  font-size: 55px;
+}
+
+.ContinentalDesc {
+  color: lightgray;
+  line-height: 30px;
+}
+
+.ContinentalTiersContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.ContinentalRegionTier {
+  width: 540px;
+  height: 250px;
+  background-color: #222831;
+  display: flex;
+  justify-content: center;
+}
+
+/* .ContinentalRegionImage {
+  width: 500px;
+  height: 300px;
+  margin-bottom: 20px;
+} */
+
+.ContinentalRegionTierMap {
+  width: 540px;
+  height: 250px;
+  background-color: #222831;
+  position: relative;
+}
+
+.ContinentalRegionMapImage {
+  width: 600px;
+  height: 540px;
+  position: absolute;
+  top: -220px;
+  left: -30px;
+}

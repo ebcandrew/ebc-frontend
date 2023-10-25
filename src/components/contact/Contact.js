@@ -71,7 +71,7 @@ function Contact() {
       <Heading text={"get in touch with us"} />
 
       <div className="contact__form">
-        <h4>Contact</h4>
+        <h4>Contact us</h4>
 
         <div className="contact__form__container">
           <div className="left">
@@ -102,11 +102,13 @@ function Contact() {
               value={message.message}
               onChange={handleInputChange}
               name="message"
+              placeholder="Your Message"
             ></textarea>
           </div>
         </div>
-        <div onClick={handleSubmit}>
+        <div className="FormButtons" onClick={handleSubmit}>
           <Button
+            className="ContactButton"
             text={
               isFetching ? (
                 <CircularProgress size={16} color="inherit" />

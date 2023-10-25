@@ -4,7 +4,7 @@ import "./Esporttheme.css";
 function Esporttheme() {
   return (
     <div className="paraghraph_text">
-      <div className="para_div">
+      <div>
         <span className="red_pahara">
           Ecommerce store <br />
         </span>

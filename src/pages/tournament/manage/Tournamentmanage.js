@@ -18,6 +18,7 @@ import {
 } from "../../../components/imports/imgs/Images";
 import Heading from "../../../components/text/Heading";
 import "./Tournamentmanage.css";
+import { PagesDropdown } from "../../AdminComponents/ManageTournaments";
 
 function Tournamentmanage() {
   const [current, setCurrent] = useState([]);
@@ -194,6 +195,7 @@ function Tournamentmanage() {
         </div>
       </div>
 
+      <PagesDropdown />
       <div className="leagues__matchup">
         <div>
           <Heading text={"current tournaments"} />

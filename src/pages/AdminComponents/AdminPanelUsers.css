@@ -1,0 +1,192 @@
+.Users,
+.Staff {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+}
+
+.Users h1,
+.Staff h1 {
+  margin-top: 2%;
+  color: white;
+  font-size: 5vh;
+
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.StaffRoles_Dropdown {
+  background-color: #1a1e24;
+  border: 0;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 2%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.StaffRoles_Dropdown option {
+  font-size: 3vh;
+}
+
+.live_demo {
+  color: #e00016;
+  font-size: medium;
+  font-weight: lighter;
+  font-family: sans-serif;
+  margin-top: 5%;
+}
+
+.User_Container,
+.Staff_Container {
+  width: 90%;
+  height: auto;
+  padding: 2%;
+  background-color: #1e2229;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.User_labels,
+.Staff_labels {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
+.User_EditFields,
+.Staff_EditFields {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5px;
+}
+
+.User_EditFields input[type="text"],
+.User_EditFields input[type="email"],
+.Staff_EditFields input[type="text"],
+.Staff_EditFields input[type="email"] {
+  width: 20%;
+  height: 8vh;
+  background-color: #1a1e24;
+  border: 0;
+  color: white;
+}
+
+.line {
+  width: 2px;
+  /* Set the width to cover the entire width of the container */
+  height: 10vh;
+  /* Set the height to determine the thickness of the line */
+  background-color: #e00016;
+  /* Set the color of the line */
+  margin: 10px 0;
+  /* Adjust the margin as needed to position the line vertically */
+}
+
+.User_checkbox,
+.Staff_checkbox {
+  width: 37vh;
+  height: auto;
+  text-align: center;
+}
+
+.Staff_checkbox {
+  background-color: rgb(26, 30, 36);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vh;
+}
+
+.Load_btn {
+  align-items: center;
+  background-color: #e00016;
+  border: 0;
+  padding: 1.5% 6% 1.5% 6%;
+  color: white;
+  font-size: medium;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-left: 40%;
+  margin-top: 5%;
+}
+
+@media (max-width: 1091px) {
+  .User_EditFields input[type="text"],
+  .User_EditFields input[type="email"] {
+    width: 60%;
+    height: 8vh;
+    margin-right: 5px;
+    background-color: #1a1e24;
+    border: 0;
+    color: white;
+  }
+
+  .User_Container,
+  .Staff_Container {
+    width: 100%;
+    height: auto;
+    padding: 1%;
+    background-color: #1e2229;
+  }
+}
+
+@media (max-width: 800px) {
+  .Users h1,
+  .staff h1 {
+    font-size: 3vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .User_EditFields input[type="text"],
+  .User_EditFields input[type="email"] {
+    width: 70%;
+    height: 8vh;
+    margin-right: 5px;
+    background-color: #1a1e24;
+    border: 0;
+    color: white;
+  }
+
+  .User_Container,
+  .Staff_Container {
+    width: 100%;
+    height: auto;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #1e2229;
+  }
+
+  .User_EditFields .line {
+    display: none;
+  }
+
+  .User_labels h5 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  .User_labels h5 {
+    font-size: 14px;
+  }
+
+  .HeroSection_Right {
+    width: auto;
+  }
+}

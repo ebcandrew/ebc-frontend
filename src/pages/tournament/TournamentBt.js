@@ -41,7 +41,7 @@ function TournamentBt() {
       const fetchData = async () => {
         await axios.get(`/tournaments/${id}`, config).then((res) => {
           setRsvp(res.data?.tournament.rsvpCode);
-          console.log(res.data?.tournament.rsvpCode)
+          console.log(res.data?.tournament.rsvpCode);
         });
       };
 
@@ -66,7 +66,7 @@ function TournamentBt() {
     });
   };
 
-  const handleChange = ({value, index}) => {
+  const handleChange = ({ value, index }) => {
     setForm((prev) => {
       const updatedCP = [...prev.cp];
       updatedCP[index] = value;
@@ -288,7 +288,7 @@ function TournamentBt() {
           </div>
         </div>
 
-        <div className="tournamentbt__body__item">
+        {/* <div className="tournamentbt__body__item">
           <div className="item__btn">
             <Curved text={3} />
           </div>
@@ -321,21 +321,6 @@ function TournamentBt() {
               </div>
             </div>
 
-            {/* <p id="calc">calculated team score</p> */}
-
-            {/* <div className="other__items__select__flex">
-              <div className="team__select2">
-                <div>coverage</div>
-              </div>
-
-              <div className="team__select2">
-                <div>bulk</div>
-              </div>
-
-              <div className="team__select2">
-                <div>safety and consistency</div>
-              </div>
-            </div> */}
 
             <div className="tts__section">
               <div className="tts">TTS</div>
@@ -364,7 +349,7 @@ function TournamentBt() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="tournamentbt__body__item ">
           <div className="item__btn">

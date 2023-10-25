@@ -36,7 +36,7 @@ function Profile2() {
   const DP =
     "https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-25.jpg";
   // const PF = "http://localhost:5000/imgs/users/";
-  const PF = `${process.env.REACT_APP_API_PUB}/users/`;
+  const PF = `${process.env.REACT_APP_PUBLIC_FOLDER_PUB}/users/`;
 
   const defaultPic =
     "https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-25.jpg";
@@ -46,11 +46,11 @@ function Profile2() {
   );
   const parsedData = JSON.parse(userObj);
 
-  const [location, setLocation] = useState(parsedData.info?.location);
-  const [friendCode, setFriendCode] = useState(parsedData.info?.friendCode);
-  const [fb, setFb] = useState(parsedData.info?.socialLinks[0]);
-  const [insta, setInsta] = useState(parsedData.info?.socialLinks[1]);
-  const [twitter, setTwitter] = useState(parsedData.info?.socialLinks[2]);
+  const [location, setLocation] = useState(parsedData?.info?.location);
+  const [friendCode, setFriendCode] = useState(parsedData?.info?.friendCode);
+  const [fb, setFb] = useState(parsedData?.info?.socialLinks[0]);
+  const [insta, setInsta] = useState(parsedData?.info?.socialLinks[1]);
+  const [twitter, setTwitter] = useState(parsedData?.info?.socialLinks[2]);
 
   const [trophiesWorldWide, setTrophiesWorldWide] = useState([]);
   const [trophiesContentential, setTrophiesContentential] = useState([]);

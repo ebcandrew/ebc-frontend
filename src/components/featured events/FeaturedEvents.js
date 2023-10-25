@@ -29,19 +29,22 @@ const FeaturedEvents = () => {
 
       <div className="featuredevents__heading">
         <div className="tag">
-          <p>Featured Events</p>
+          <p>Featured Events </p>
         </div>
 
         <div className="link">
           <a href="/all-tournaments">See All</a>
-          <ArrowForwardIcon />
+          <ArrowForwardIcon className="LinkIcon" />
         </div>
       </div>
 
       <div className="featuredevents__list">
         {featured?.map((event, index) => {
-          console.log(event);
-          const isHighScore = event.num1 > event.num2;
+          console.log(
+            event?.tournament?.matches[0]?.player1Score,
+            "Eveent details"
+          );
+          const isHighScore = event.player1Score > event.player2Score;
 
           return (
             <div className="featuredevents__list__item" key={index}>
@@ -50,14 +53,17 @@ const FeaturedEvents = () => {
                   <img src={T1} alt="" />
                 </p>
 
-                <p className={`score ${isHighScore ? "high" : ""}`}>
-                  {event.num1}
+                <p
+                  className={`score ${isHighScore ? "high" : ""}`}
+                  style={{ color: isHighScore ? "red" : "white" }}
+                >
+                  {event.player1Score}
                 </p>
 
                 <span>vs</span>
 
                 <p className={`score ${isHighScore ? "" : "high"}`}>
-                  {event.num2}
+                  {event.player2Score}
                 </p>
 
                 <p>
@@ -66,16 +72,18 @@ const FeaturedEvents = () => {
               </div>
 
               <div className="league">
-                {/* <p className="name">{event.tournament.league}</p> */}
-                <p className="cup">{event.matchName}</p>
-                <p className="date">{event.startTime}</p>
-              </div>
+                <div className="leagueInfoWrapper">
+                  <p className="name">{event.tournament.league}</p>
+                  <p className="cup">{event.matchName}</p>
+                  <p className="date">{event.startTime}</p>
+                </div>
 
-              <div className="video__link">
-                <a href={event.matchLink}>
-                  <YouTubeIcon />
-                  <p>Watch</p>
-                </a>
+                <div className="video__link">
+                  <a href={event.matchLink}>
+                    <YouTubeIcon />
+                    <p>Watch</p>
+                  </a>
+                </div>
               </div>
             </div>
           );

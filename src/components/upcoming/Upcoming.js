@@ -16,6 +16,7 @@ const Upcoming = () => {
     try {
       axios.get("/tournaments/upcoming")
         .then(response => {
+          console.log("ok");
           console.log(response);
           setLists(response.data?.upcomingTournaments);
         })
@@ -70,7 +71,7 @@ const Upcoming = () => {
               </div>
             </div>
           ))}
-         
+
         </div>
 
         <div className="upcoming__container__cards">

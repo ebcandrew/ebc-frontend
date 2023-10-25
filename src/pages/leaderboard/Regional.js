@@ -8,24 +8,26 @@ import {
   Profile,
 } from "../../components/imports/imgs/Images";
 import Heading from "../../components/text/Heading";
+import { Link } from "react-router-dom";
 
 function Regional() {
   const [regional, setRegional] = useState([]);
+  const fetchRegional = async () => {
+    await axios
+      .get(process.env.REACT_APP_API_PUB + "/leagues/top-players")
+      .then((res) => {
+        setRegional(res.data?.data.regional);
+      });
+  };
 
   // const PF = "http://localhost:5000/imgs/users/";
-  const PF = `${process.env.REACT_APP_API_PUB}/users/`;
+  const PF = `${process.env.REACT_APP_PUBLIC_FOLDER_PUB}/users/`;
 
   const defaultPic =
     "https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-25.jpg";
 
   useEffect(() => {
     try {
-      const fetchRegional = async () => {
-        await axios.get("/leagues/top-players").then((res) => {
-          setRegional(res.data?.data.regional);
-        });
-      };
-
       fetchRegional();
     } catch (error) {
       console.log(error);
@@ -136,14 +138,14 @@ function Regional() {
 
       <div className="leaderboard__btns">
         <div className="btn">
-          <a href="/leaderboard">
+          <Link to="/leaderboard">
             <Button text={"world wide"} />
-          </a>
+          </Link>
         </div>{" "}
         <div className="btn">
-          <a href="/continental">
+          <Link to="/continental">
             <Button text={"Contentential"} />
-          </a>
+          </Link>
         </div>
         <div className="btn" id="first">
           <Button text={"country & regional"} />
@@ -153,10 +155,8 @@ function Regional() {
       <Heading text={"canada"} />
 
       <div className="leaderboard__para">
-        Nulla rutrum sem turpis, at pretium quam porttitor in. Integer sodales
-        at enim et blandit. Aliquam dignissim vestibulum hendrerit. Quisque
-        dapibus blandit metus. Nulla rutrum sem turpis, at pretium quam
-        porttitor in.
+        This web page showcases the world's top players, presenting
+        comprehensive stats like win-loss percentages and rankings.
       </div>
       <div className="table_wrapper">
         <table>
@@ -189,20 +189,20 @@ function Regional() {
 
                   {value.profilePhoto === defaultPic ? (
                     <p className="profile">
-                      <a href={`/view-user/${value._id}`}>
+                      <Link to={`/view-user/${value._id}`}>
                         <img src={defaultPic} alt="" />
-                      </a>
+                      </Link>
                       <img src={value.art} alt="" />
                     </p>
                   ) : (
                     <p className="profile">
-                      <a href={`/view-user/${value._id}`}>
+                      <Link to={`/view-user/${value._id}`}>
                         <img
                           src={PF + value.profilePhoto}
                           alt=""
                           crossOrigin="anonymous"
                         />
-                      </a>
+                      </Link>
                       <img src={value.art} alt="" />
                     </p>
                   )}

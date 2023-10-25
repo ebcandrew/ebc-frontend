@@ -79,8 +79,8 @@ function Teammanager() {
     });
     const data = {
       pokemon,
-    }
-      console.log(data);
+    };
+    console.log(data);
     //  try {
     //    const fetchData = async () => {
     //      await axios.post(`/teams`, config).then((res) => {
@@ -168,10 +168,10 @@ function Teammanager() {
           begins and will remain viewable afterward.
         </p>
 
+        <Curved text={1} />
+
         <div className="tournamentbt__body__item">
-          <div className="item__btn">
-            <Curved text={1} />
-          </div>
+          <div className="item__btn"></div>
 
           <div className="other__items">
             <h3>tEAM NAME - CITY AND NICKNAME</h3>
@@ -193,10 +193,9 @@ function Teammanager() {
           </div>
         </div>
 
+        <Curved text={2} />
         <div className="tournamentbt__body__item">
-          <div className="item__btn">
-            <Curved text={2} />
-          </div>
+          <div className="item__btn"></div>
 
           <div className="other__items__2">
             <h3>ADD YOUR PLAYERS TO YOUR TEAM</h3>
@@ -211,10 +210,10 @@ function Teammanager() {
           </div>
         </div>
 
+        <Curved text={3} />
+
         <div className="tournamentbt__body__item">
-          <div className="item__btn">
-            <Curved text={3} />
-          </div>
+          <div className="item__btn"></div>
 
           <div className="other__items">
             <h3>Register team for event ( tournament / League)</h3>
@@ -273,10 +272,9 @@ function Teammanager() {
           </div>
         </div>
 
+        <Curved text={4} />
         <div className="tournamentbt__body__item">
-          <div className="item__btn">
-            <Curved text={4} />
-          </div>
+          <div className="item__btn"></div>
 
           <div className="other__items">
             <h3>AGREE TO THE TOURNAMENT / LEAGUE RULES </h3>

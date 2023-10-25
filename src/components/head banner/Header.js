@@ -11,6 +11,7 @@ import {
   Team2,
 } from "../imports/imgs/Images";
 import "./Header.css";
+import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 
 function Header() {
@@ -20,10 +21,9 @@ function Header() {
   const [player1Score, setPlayer1Score] = useState(null);
   const [player2Score, setPlayer2Score] = useState(null);
 
-
   useEffect(() => {
     const fetchLatestMatch = () => {
-      console.log("requesting")
+      console.log("requesting");
       axios
         .get(`/tournaments/latestMatch/6474979416874614109e9f85`)
         .then((response) => {
@@ -34,7 +34,9 @@ function Header() {
           setLatestMatch(match);
         })
         .catch((error) => {
-          console.log(error.response?.data?.message || "Failed to fetch latest match");
+          console.log(
+            error.response?.data?.message || "Failed to fetch latest match"
+          );
         });
     };
 
@@ -54,10 +56,9 @@ function Header() {
       console.log(error.response?.data?.message || "Failed to check-in");
     }
   };
-  
 
   return (
-    <>
+    <div className="headerc container">
       <div className="header">
         <div className="header__text">
           <p>
@@ -65,22 +66,20 @@ function Header() {
           </p>
 
           <div className="header__text__btn">
-          <a href="/alltournaments" style={{ textDecoration: "none" }}>
-          <Button text={"find tournament"} />
-          </a>
-          {user && (
-          <a href="/alltournaments" style={{ textDecoration: "none" }}>
-          <Button text={"check in"} onClick={handleCheckIn} />
-          </a>
-          )}
-      </div>        
-
-
+            <Link to="/alltournaments" style={{ textDecoration: "none" }}>
+              <Button text={"find tournament"} />
+            </Link>
+            {user && (
+              <Link to="/alltournaments" style={{ textDecoration: "none" }}>
+                <Button text={"check in"} onClick={handleCheckIn} />
+              </Link>
+            )}
+          </div>
 
           {!user && (
             <div className="header__text__links">
-              <a href="/login">login</a> <span>or</span>
-              <a href="/register">register now</a>
+              <Link to="/login">login</Link> <span>or</span>
+              <Link to="/register">Register Now</Link>
             </div>
           )}
         </div>
@@ -89,6 +88,7 @@ function Header() {
           <img src={Header1} alt="" />
         </div>
       </div>
+
       <div className="header__footer">
         <div className="header__footer__arrows">
           <p>
@@ -107,22 +107,22 @@ function Header() {
 
         <div className="header__footer__fixtures">
           <h3>Our Latest Match</h3>
-            <div className="header__footer__fixtures__display">
-              <p>
-                <img src={Team1} alt="" />
-                <br />
-                <span className="figureFirst">{player1Score}</span>
-              </p>
-              <span>vs</span>{" "}
-              <p>
-                <img src={Team2} alt="" />
-                <br />
-                <span className="figureLast">{player2Score}</span>
-              </p>
-            </div>
+          <div className="header__footer__fixtures__display">
+            <p>
+              <img src={Team1} alt="" />
+              <br />
+              <span className="figureFirst">{player1Score}</span>
+            </p>
+            <span>vs</span>{" "}
+            <p>
+              <img src={Team2} alt="" />
+              <br />
+              <span className="figureLast">{player2Score}</span>
+            </p>
+          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

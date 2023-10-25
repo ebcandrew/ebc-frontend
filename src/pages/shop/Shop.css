@@ -3,7 +3,7 @@
 }
 
 .shop__banner {
-  height: 40vh;
+  /* height: 40vh; */
 }
 
 .shop__banner__text h3 {
@@ -14,22 +14,73 @@
 }
 
 .shop__banner__text p {
-  width: 30%;
+  width: 90%;
   color: var(--fadedWhite);
   font-size: 14px;
   line-height: 1.7rem;
 }
 
-.shop__items .other__items__2 {
+.shop__items {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+.tournamentbt__body__item .shop__body__item {
+  width: 100%;
 }
 
-.shop__items .other__items__2 h3 {
+.other__items__2 .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+}
+
+.other__items__2 .btn:hover {
+  background-color: var(--red);
+  border-radius: 0;
+}
+
+.other__items__2 .ShopBTN:nth-child(1) {
+  text-transform: capitalize;
+  font-size: 16px;
+  border-bottom: 50px solid var(--red);
+  border-left: 0px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bolder;
+  /* margin-left: -55px; */
+  z-index: 10;
+}
+
+.other__items__2 .ShopBTN:nth-child(1) span {
+  margin-top: 10px;
+}
+
+.shop__items .other__items__2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-right: 20px;
+  align-items: center;
+
+  /* background-color: antiquewhite; */
+}
+
+/* .shop__items .other__items__2 h3 {
   margin-right: 1rem;
   color: var(--lightText);
   cursor: pointer;
-}
+} */
 
 .shop .tournamentbt__body__item .item__btn .button {
   width: 30%;
@@ -37,7 +88,7 @@
 }
 
 .shop .tournamentbt__body__item .item__btn {
-  width: 20%;
+  background-color: red;
 }
 
 .shop__items__cards {
@@ -45,19 +96,25 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 80%;
+  margin-top: 20px;
 }
 
 .shop__items__cards__item {
-  background-color: var(--darkBlue);
+  background-color: var(--BTN);
   margin: 0.5rem;
   padding: 1rem;
-  height: 100vh;
+  height: 500px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 25%;
+  width: 20%;
+}
+
+.shop__items__cards__item:hover {
+  background-color: var(--red);
 }
 
 .shop__items__cards__item .button {
@@ -68,6 +125,7 @@
 
 .shop__items__cards__item h3 {
   color: var(--fadedWhite);
+  font-size: 18px;
   text-transform: uppercase;
   margin-top: 1rem;
 }
@@ -80,7 +138,7 @@
 .shop__items__cards__item__img img {
   width: 100%;
   height: 90%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .shop__items__cards__item__btn {
@@ -102,16 +160,16 @@
   }
 
   .shop {
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
   }
 
-  .other__items__2 {
+  /* .other__items__2 {
     width: 100%;
     justify-content: space-around;
-  }
+  } */
 
   .shop__body__item {
-    flex-direction: column;
+    flex-direction: column !important;
   }
 }
 
@@ -137,7 +195,7 @@
     font-size: 12px;
   }
   .shop__banner {
-    height: 20vh;
+    /* height: 20vh; */
   }
 
   .shop {
@@ -148,6 +206,36 @@
 @media screen and (max-width: 808px) {
   .shop__items__cards {
     justify-content: space-around;
+  }
+  .shop__items .other__items__2 {
+    padding-right: 0px;
+  }
+
+  .shop__items {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 671px) {
+  .other__items__2 .ShopBTN:nth-child(1) {
+    font-size: 16px;
+    height: 0;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    /* margin-left: -4px; */
+    z-index: 10;
+  }
+
+  .other__items__2 {
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
@@ -160,5 +248,20 @@
 @media screen and (max-width: 430px) {
   .other__items__2 {
     flex-wrap: wrap;
+  }
+
+  .other__items__2 .ShopBTN:nth-child(1) {
+    font-size: 16px;
+    height: 0;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    margin-left: -2.5px;
+    z-index: 10;
   }
 }

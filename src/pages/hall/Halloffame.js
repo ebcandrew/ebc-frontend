@@ -58,7 +58,7 @@ function Halloffame() {
         </div>
 
         <div className="tournament__image">
-          <img src={LeaderboardBanner} alt="" />
+          <img src={LeaderboardBanner} style={{ width: "100%" }} alt="" />
         </div>
       </div>
 
@@ -86,29 +86,29 @@ function Halloffame() {
         <h3>world + country awards</h3>
       </div>
       {cups.map((cup, index) => {
-          return (
+        return (
 
-      <div className="halloffame__cups" index={index}>
-        <div className="halloffame__cups__lead">
-          <p className="cup">
-            <img src={Cup} alt="" />
-          </p>
+          <div className="halloffame__cups" index={index}>
+            <div className="halloffame__cups__lead">
+              <p className="cup">
+                <img src={Cup} alt="" />
+              </p>
 
-          <p className="details">
-            <p className="details__avatar"></p>
+              <p className="details">
+                <p className="details__avatar"></p>
 
-            <div className="details__main">
-              <p id="cupname">world champion</p>
+                <div className="details__main">
+                  <p id="cupname">world champion</p>
 
-              <p id="username">{cup.name}</p>
+                  <p id="username">{cup.name}</p>
 
-              <p id="desc">{cup.description}</p>
+                  <p id="desc">{cup.description}</p>
+                </div>
+              </p>
             </div>
-          </p>
-        </div>
-      </div>
-                );
-              })}
+          </div>
+        );
+      })}
 
       <div className="halloffame__cups__others">
         {cups.map((cup, index) => {

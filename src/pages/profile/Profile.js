@@ -1,6 +1,8 @@
 import axios from "../../axios";
 import React, { useContext, useEffect, useState } from "react";
 import Button from "../../components/button/Button";
+import profile from "../../components/imports/imgs/files/user.png";
+import pokemon from "../../components/imports/imgs/files/team2.png";
 import {
   ArrowForwardIcon,
   FacebookIcon,
@@ -34,12 +36,13 @@ function Profile() {
   const [successMessage, setSuccessMessage] = useState("");
 
   // const PF = "http://localhost:5000/imgs/users/";
-  const PF = `${process.env.REACT_APP_API_PUB}/users`;
+  const PF = `${process.env.REACT_APP_PUBLIC_FOLDER_PUB}/users`;
 
   const defaultPic =
     "https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-25.jpg";
 
   const [userDetails, setUserDetails] = useState(user);
+  console.log(userDetails);
   const [allUsers, setAllUsers] = useState([]);
   const [allTournaments, setAllTournaments] = useState([]);
   const [allBlogs, setAllBlogs] = useState([]);
@@ -161,7 +164,10 @@ function Profile() {
       <div className="profile__banner">
         <div className="profile__banner__text">
           <h3>
-            <span>{userDetails.username}</span>
+            <span>
+              {/* {userDetails?.username} */}
+              Mark Beckham
+            </span>
           </h3>
 
           <p>
@@ -169,15 +175,16 @@ function Profile() {
           </p>
         </div>
         <div className="profile__banner__img">
-          {userDetails.profilePhoto === defaultPic ? (
-            <img src={defaultPic} alt="" />
+          <img src={profile} alt="" />
+          {/* {userDetails?.profilePhoto === defaultPic ? (
+            <img src={profile} alt="" />
           ) : (
             <img
-              src={PF + userDetails.profilePhoto}
+              src={PF + userDetails?.profilePhoto}
               alt=""
-              crossOrigin="anonymous"
+              // crossOrigin="anonymous"
             />
-          )}
+          )} */}
         </div>
 
         <div className="profile__banner__shorts">
@@ -193,7 +200,7 @@ function Profile() {
         </div>
       </div>
 
-      {/* <div className="profile__banner__othertext">
+      <div className="profile__banner__othertext">
         <p id="text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nobis
           neque dicta repellat nam optio ea. Recusandae, error. Id repellendus
@@ -212,11 +219,11 @@ function Profile() {
             </p>
           </div>
         </p>
-      </div> */}
+      </div>
 
       <div className="profile__mainbody">
         <div className="profile__mainbody__heading">
-          <Heading text={`${userDetails.username} statistics`} />
+          <Heading text={`${userDetails?.username} statistics`} />
         </div>
       </div>
 
@@ -230,7 +237,8 @@ function Profile() {
                   <span>
                     <MapIcon />
                   </span>{" "}
-                  {userDetails?.location}
+                  New York
+                  {/* {userDetails?.location} */}
                 </p>
               </div>
 
@@ -240,7 +248,8 @@ function Profile() {
                   <span>
                     <img src={Cup} alt="" />
                   </span>{" "}
-                  {userDetails?.info?.rank}
+                  Gold
+                  {/* {userDetails?.info?.rank} */}
                 </p>
               </div>
 
@@ -250,6 +259,7 @@ function Profile() {
                   <span>
                     <img src={Avatar} alt="" />
                   </span>{" "}
+                  Lorem ipsum, dolor
                   {/* {userDetails.currentTournaments &&
                     userDetails.currentTournaments[0].teams[0]} */}
                 </p>
@@ -257,12 +267,16 @@ function Profile() {
 
               <div>
                 <h3>email</h3>
-                <p>{userDetails.email}</p>
+                <p>
+                  kalwerazaan@gmail.com
+                  {/* {userDetails?.email} */}
+                </p>
               </div>
 
               <div>
                 <h3>friend code</h3>
-                <p>{userDetails._id}</p>
+                *******
+                {/* <p>{userDetails?._id}</p> */}
               </div>
             </div>
           </div>
@@ -276,7 +290,10 @@ function Profile() {
                   <p>
                     <FavoriteBorderIcon />
                   </p>
-                  <h3>{userDetails.stats?.wins}</h3>
+                  <h3>
+                    346
+                    {/* {userDetails?.stats?.wins} */}
+                  </h3>
 
                   <p id="rank">wins</p>
                 </div>
@@ -285,7 +302,10 @@ function Profile() {
                   <p>
                     <FavoriteBorderIcon />
                   </p>
-                  <h3>{userDetails.stats?.Loses}</h3>
+                  <h3>
+                    {/* {userDetails?.stats?.Loses} */}
+                    30
+                  </h3>
 
                   <p id="rank">loses</p>
                 </div>
@@ -294,7 +314,10 @@ function Profile() {
                   <p>
                     <FavoriteBorderIcon />
                   </p>
-                  <h3>{userDetails.stats?.WLPercentage}</h3>
+                  <h3>
+                    {/* {userDetails?.stats?.WLPercentage} */}
+                    102
+                  </h3>
 
                   <p id="rank">wl %</p>
                 </div>
@@ -302,7 +325,10 @@ function Profile() {
                   <p>
                     <FavoriteBorderIcon />
                   </p>
-                  <h3>{userDetails.stats?.EBCRank}</h3>
+                  <h3>
+                    #1
+                    {/* {userDetails?.stats?.EBCRank} */}
+                  </h3>
 
                   <p id="rank">global rank</p>
                 </div>
@@ -311,7 +337,10 @@ function Profile() {
                   <p>
                     <FavoriteBorderIcon />
                   </p>
-                  <h3>{userDetails.stats?.uniqueOpponents}</h3>
+                  <h3>
+                    482
+                    {/* {userDetails?.stats?.uniqueOpponents} */}
+                  </h3>
 
                   <p id="rank"> opponents</p>
                 </div>
@@ -320,7 +349,10 @@ function Profile() {
                   <p>
                     <FavoriteBorderIcon />
                   </p>
-                  <h3>{userDetails.stats?.achievements}</h3>
+                  <h3>
+                    94
+                    {userDetails?.stats?.achievements}
+                  </h3>
 
                   <p id="rank">achievements</p>
                 </div>
@@ -329,7 +361,10 @@ function Profile() {
                   <p>
                     <FavoriteBorderIcon />
                   </p>
-                  <h3>{userDetails.stats?.trophies}</h3>
+                  <h3>
+                    {/* {userDetails?.stats?.trophies} */}
+                    94
+                  </h3>
 
                   <p id="rank">trophies</p>
                 </div>
@@ -338,7 +373,10 @@ function Profile() {
                   <p>
                     <FavoriteBorderIcon />
                   </p>
-                  <h3>{userDetails.stats?.matchPlayed || 0}</h3>
+                  <h3>
+                    376
+                    {/* {userDetails?.stats?.matchPlayed || 0} */}
+                  </h3>
 
                   <p id="rank">match played</p>
                 </div>
@@ -347,7 +385,10 @@ function Profile() {
                   <p>
                     <FavoriteBorderIcon />
                   </p>
-                  <h3>{userDetails.stats?.nationalRank}</h3>
+                  <h3>
+                    #1
+                    {/* {userDetails?.stats?.nationalRank} */}
+                  </h3>
 
                   <p id="rank">national ranks</p>
                 </div>
@@ -356,7 +397,10 @@ function Profile() {
                   <p>
                     <FavoriteBorderIcon />
                   </p>
-                  <h3>{userDetails.stats?.ranksTournaments}</h3>
+                  <h3>
+                    108
+                    {/* {userDetails?.stats?.ranksTournaments} */}
+                  </h3>
 
                   <p id="rank"> tournaments</p>
                 </div>
@@ -386,11 +430,15 @@ function Profile() {
               <div className="tournament__entered__entries__entry" key={index}>
                 <div className="entry">
                   <div id="text">
-                    <p id="challenge">{entry.eventTitle}</p>
+                    <p id="challenge">
+                      KNIGHT GAMING VS VENGENCE GAMING
+                      {/* {entry.eventTitle} */}
+                    </p>
 
                     <p id="league">{entry.league}</p>
                     <p id="date">
-                      {entry?.startDate}, {entry?.startTime}
+                      July 28th, 2020 9:00 PM
+                      {/* {entry?.startDate}, {entry?.startTime} */}
                     </p>
                   </div>
 
@@ -398,8 +446,9 @@ function Profile() {
                     <p>
                       <img
                         src={
-                          entry.teamsPresets &&
-                          entry.teamsPresets[0].pokemon[0].sticker
+                          pokemon
+                          // entry.teamsPresets &&
+                          // entry.teamsPresets[0].pokemon[0].sticker
                         }
                         alt=""
                       />
@@ -410,8 +459,9 @@ function Profile() {
                     <p>
                       <img
                         src={
-                          entry.teamsPresets &&
-                          entry.teamsPresets[0].pokemon[1].sticker
+                          pokemon
+                          // entry.teamsPresets &&
+                          // entry.teamsPresets[0].pokemon[1].sticker
                         }
                         alt=""
                       />
@@ -498,13 +548,13 @@ function Profile() {
             );
           })}
 
-        {trophiesRegion.length !== 0 && (
+        {/* {trophiesRegion.length !== 0 && (
           <div className="leaderboard__loadmore profile">
             <Button text={"load more"} />
           </div>
-        )}
+        )} */}
 
-        {trophiesWorldWideActive &&
+        {/* {trophiesWorldWideActive &&
           trophiesWorldWide?.map((cup, index) => {
             return (
               <div className="halloffame__cups" index={index}>
@@ -525,15 +575,15 @@ function Profile() {
                 </div>
               </div>
             );
-          })}
+          })} */}
 
-        {trophiesWorldWide?.length !== 0 && (
+        {/* {trophiesWorldWide?.length !== 0 && (
           <div className="leaderboard__loadmore profile">
             <Button text={"load more"} />
           </div>
-        )}
+        )} */}
 
-        {trophiesContententialActive &&
+        {/* {trophiesContententialActive &&
           trophiesContentential?.map((cup, index) => {
             return (
               <div className="halloffame__cups" index={index}>
@@ -554,13 +604,13 @@ function Profile() {
                 </div>
               </div>
             );
-          })}
+          })} */}
 
-        {trophiesContentential?.length !== 0 && (
-          <div className="leaderboard__loadmore profile">
-            <Button text={"load more"} />
-          </div>
-        )}
+        {/* {trophiesContentential?.length !== 0 && (
+            <div className="leaderboard__loadmore profile">
+              <Button text={"load more"} />
+            </div>
+          )} */}
       </div>
     </div>
   );

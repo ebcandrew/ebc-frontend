@@ -19,7 +19,7 @@ function Checkout() {
 
   const { id } = useParams();
   // const PF = "http://localhost:5000/imgs/products/";
-  const PF = `${process.env.REACT_APP_API_PUB}/products/`;
+  const PF = `${process.env.REACT_APP_PUBLIC_FOLDER_PUB}/products/`;
 
   useEffect(() => {
     try {

@@ -1,0 +1,99 @@
+.RSVP_Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  width: 90%;
+  height: auto;
+  padding: 2%;
+  background-color: #1e2229;
+  gap: 20px;
+}
+
+.RSVP_Container span {
+  color: white;
+  background-color: var(--red);
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 20px 30px;
+  /* margin: 2% 0 0 5%; */
+  font-size: 20px;
+  font-weight: lighter;
+  /* width: 15%; */
+  /* padding: 1%; */
+}
+
+.RSVP_Container input[type="text"],
+.RSVP_Container input[type="number"],
+.RSVP_Container select {
+  width: 100%;
+  height: 10vh;
+  background-color: #1a1e24;
+  border: 0;
+  color: white;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.RSVP_Container select {
+  text-align: center;
+  font-weight: lighter;
+  margin-bottom: 2vh;
+}
+
+.RSVP_Container textarea {
+  width: 100%;
+  height: 40vh;
+  background-color: #1a1e24;
+  border: 0;
+  color: white;
+  margin: 3% 0 0;
+}
+
+.ProductImages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.ProductImageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Product p {
+  height: 4vh;
+  font-size: 3vh;
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+}
+
+.EcommerceRSVPJerseyInput {
+  background-color: var(--MainBg) !important;
+}
+
+@media (max-width: 600px) {
+  .ProductImages {
+    flex-direction: column;
+  }
+
+  .Blog_container h1 {
+    font-size: 3vh;
+  }
+
+  .RSVP_Container h2 {
+    font-size: 2vh;
+  }
+
+  .Bracket_Dropdown option {
+    font-size: 1.5vh;
+  }
+
+  .Create-btn {
+    width: 24vw;
+  }
+}

@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Curved from "../../components/button/Curved";
-import { AD, Rank, Team1, Tourna } from "../../components/imports/imgs/Images";
+import {
+  AD,
+  Rank,
+  Team1,
+  AdminHeroSectionImage,
+  Header1,
+} from "../../components/imports/imgs/Images";
 import "./Tournament.css";
 import Heading from "../../components/text/Heading";
 import DoubleCurve from "../../components/button/DoubleCurve";
@@ -27,6 +33,7 @@ function Tournament() {
 
       const fetchTournaments = async () => {
         await axios(`/tournaments/${id}`).then((res) => {
+          console.log("fetchTournaments-------------", res.data);
           // console.log(res.data?.tournament);
           setTournaments(res.data?.tournament);
         });
@@ -41,6 +48,7 @@ function Tournament() {
 
       const fetchMatches = async () => {
         await axios(`/tournaments/${id}`).then((res) => {
+          console.log(res.data, "-------------------------------");
           // console.log(res.data?.tournament.matches);
           // console.log(res.data?.tournament.matches);
           setMatches(res.data?.tournament.matches);
@@ -72,7 +80,12 @@ function Tournament() {
         </div>
 
         <div className="tournament__image">
-          <img src={Tourna} alt="" />
+          <img
+            src={AdminHeroSectionImage}
+            className="tournament__image1"
+            alt=""
+          />
+          <img src={Header1} className="tournament__image2" alt="" />
         </div>
       </div>
 
@@ -158,7 +171,7 @@ function Tournament() {
 
                   <p className="score">{match.tts?.highScore}</p>
 
-                  <p className="user two">
+                  <p className="usertwo">
                     <DoubleCurve text={match.user} />
                     <img src={Rank} alt="" id="first" />
                   </p>

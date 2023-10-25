@@ -6,7 +6,13 @@ import {
   OndemandVideoIcon,
   ShareIcon,
 } from "../../components/imports/icons/Icons";
-import { AD, Rank, Team1, Tourna } from "../../components/imports/imgs/Images";
+import {
+  AD,
+  Rank,
+  Team1,
+  AdminHeroSectionImage,
+  Header1,
+} from "../../components/imports/imgs/Images";
 import Heading from "../../components/text/Heading";
 
 function TournamentMu2() {
@@ -113,18 +119,20 @@ function TournamentMu2() {
           </h3>
 
           <p>
-            Nulla rutrum sem turpis, at pretium quam porttitor in. Integer
-            sodales at enim et blandit. Aliquam dignissim vestibulum hendrerit.
+            We want to ensure that everyone has the opportunity to improve and
+            learn from their gameplay. To make this possible, please remember to
+            record your matches both in-game and on the platform you're using
+            for our events.
           </p>
 
           <div className="tournament__text__footer">
-            <div className="content">
+            <div className="torunament_content">
               <p>tournament name :</p>
 
               <p>lorem ipsum</p>
             </div>
 
-            <div className="content">
+            <div className="torunament_content">
               <p>Opponent :</p>
 
               <p>lorem ipsum</p>
@@ -133,7 +141,12 @@ function TournamentMu2() {
         </div>
 
         <div className="tournament__image">
-          <img src={Tourna} alt="" />
+          <img
+            src={AdminHeroSectionImage}
+            className="tournament__image1"
+            alt=""
+          />
+          <img src={Header1} className="tournament__image2" alt="" />
         </div>
       </div>
 

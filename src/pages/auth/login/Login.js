@@ -8,6 +8,7 @@ import {
   TwitterIcon,
 } from "../../../components/imports/icons/Icons";
 import "./Login.css";
+import { Link } from "react-router-dom";
 
 import axios from "../../../axiosAuth";
 
@@ -37,17 +38,17 @@ function Login() {
       link: "/auth/reddit",
     },
 
-    // {
-    //   icon: AccountBalanceWalletIcon,
-    //   name: "torus wallet",
-    //   link: "/auth/torus",
-    // },
+    {
+      icon: AccountBalanceWalletIcon,
+      name: "torus wallet",
+      link: "/auth/torus",
+    },
   ];
 
   const handleLogin = async (link) => {
     try {
       // window.location.href = `https://api.ebc.gg${link}`;
-      window.location.href = `${process.env.REACT_APP_PUBLIC_FOLDER_PUB}${link}`;
+      window.location.href = `http://localhost:5000${link}`;
 
       // await axios
       //   .get(`http://localhost:5000/auth/google/callback`)
@@ -67,26 +68,32 @@ function Login() {
         </h3>
 
         <p>
-          Nulla rutrum sem turpis, at pretium quam porttitor in. Integer sodales
-          at enim et blandit. Aliquam dignissim vestibulum hendrerit.
+          Welcome back, seasoned players! We know you're eager to dive back into
+          the gaming action, and we've made it easier than ever to get started.
+          Say goodbye to the hassle of remembering usernames and passwords,
+          because now you can effortlessly log in using your favorite social
+          media accounts.
         </p>
 
-        <a href="/register">Don’t have account? Register now.</a>
+        <Link to="/register">
+          Don’t have account?{" "}
+          <span style={{ textDecoration: "underline" }}>Register now.</span>
+        </Link>
       </div>
       <div className="login__cta">
-        {cta.map((c, index) => {
-          return (
+        <div className="loginBTNContainer">
+          {cta.map((c, index) => (
             <div className="cta__item" key={index}>
-              <p>
-                <Curved className="icon" text={<c.icon />} />
-              </p>
+              <div className="BtnWrapper">
+                <c.icon className="InnerBTN" />
+              </div>
 
               <p id="text" onClick={() => handleLogin(c.link)}>
-                <Curved text={c.name} />
+                <span className="TextWrapper">{c.name}</span>
               </p>
             </div>
-          );
-        })}
+          ))}
+        </div>
       </div>
     </div>
   );

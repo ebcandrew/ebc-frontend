@@ -1,10 +1,7 @@
-.blog .gameselect__banner__text h3 {
-  text-align: left;
-}
-
 .blog__post {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 100px;
 }
 
 rect {
@@ -16,12 +13,13 @@ rect {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
   padding-bottom: 1rem;
 }
 
 .blog__post__items__card {
   width: 100%;
+  background-color: var(--MainBg);
 }
 
 .blog__post__items__card #blogimg {
@@ -52,19 +50,28 @@ rect {
   position: relative;
 }
 
-.blog__post__items__card__img p {
+.blog__post__items__card__img div {
   position: absolute;
   color: var(--fadedWhite);
   text-transform: uppercase;
   bottom: 0;
   background-color: var(--blogLinear);
-  padding: 1rem 0;
+  padding: 1rem 30px;
   width: 100%;
   font-weight: bolder;
 }
 
+.blog__post__items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .blog__post__items__card__others {
-  margin: 2rem 0;
+  /* margin: 2rem 0; */
+  padding: 1.5rem 20px;
+  display: flex;
+  align-items: center;
 }
 
 .blog__post__items__card__others .date {
@@ -99,20 +106,22 @@ rect {
 }
 
 .blog__popular__items {
-  width: 100%;
-  background-color: var(--darkBlue);
+  background-color: var(--MainPrimary);
   padding: 1rem;
   color: var(--fadedWhite);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .blog__popular__items__row {
   display: flex;
-  margin: 3rem 0;
+  padding: 10px 20px;
 }
 
 .blog__popular__items__row > div img {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   margin-right: 1rem;
 }
@@ -127,7 +136,40 @@ rect {
 }
 
 .blog__popular {
-  margin-right: 1rem;
+  /* margin-right: 1rem; */
+  /* width: 30%; */
+}
+
+/* New Code */
+
+.gameselect__banner__text {
+  /* margin-left: 50px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blog .gameselect__banner__text h3 {
+  text-align: left;
+  font-size: 51px;
+  font-weight: 700;
+}
+
+.gameselect__banner__text p {
+  width: 70%;
+}
+
+/* New Code */
+
+.BlogsSection {
+  width: 100%;
+  /* background-color: red; */
+}
+
+.BlogContainer {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
 }
 
 @media screen and (max-width: 1100px) {
@@ -138,6 +180,14 @@ rect {
   .blog__loadmore {
     width: 70%;
   }
+  .blog__post {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 949px) {
 }
 
 @media screen and (max-width: 785px) {
@@ -157,7 +207,7 @@ rect {
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 430px) {
   .blog__post__items__card__others {
     flex-direction: column;
     justify-content: space-around;

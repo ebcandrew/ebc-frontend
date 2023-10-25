@@ -15,7 +15,7 @@
   width: 100%;
   height: 2.3rem;
   outline: none;
-  background-color: var(--darkBlue);
+  background-color: var(--BTNSecondary);
   outline: none;
   border: none;
   color: var(--fadedWhite);
@@ -25,7 +25,7 @@
   width: 100%;
   min-height: 20vh;
   outline: none;
-  background-color: var(--darkBlue);
+  background-color: var(--BTNSecondary);
   outline: none;
   border: none;
   color: var(--fadedWhite);
@@ -47,7 +47,7 @@
 }
 
 .addblog__form .btn__submit .button {
-  width: 20%;
+  /* width: 20%; */
   padding: 1rem;
   margin: auto;
 }

@@ -2,52 +2,59 @@
   padding: var(--padding);
   width: 50%;
   margin: auto;
+  padding-bottom: 70px;
 }
 
 .contact .button {
-  width: 5%;
-  padding: 1rem;
-  margin: auto;
+  /* width: 5%; */
+  /* padding: 1rem; */
+  /* margin: auto; */
+  width: 200px !important;
   font-weight: bolder;
 }
 
 .contact__form__container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 20px;
   margin-bottom: 1rem;
 }
 
 .contact__form h4 {
   text-align: center;
-  color: var(--fadedWhite);
+  color: var(--lightText);
   margin-bottom: 2rem;
 }
 
 .contact__form__container input {
   width: 20rem;
-  height: 2rem;
-  margin-bottom: 2rem;
-  background-color: var(--darkBlue);
+  padding: 10px 10px;
+  background-color: var(--footerColor);
   outline: none;
   border: none;
-  padding: 0.5rem;
-  color: var(--fadedWhite);
+  color: var(--footerColor);
 }
 
 .contact__form__container .left {
-  height: 20vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact__form__container textarea {
-  background-color: var(--darkBlue);
+  background-color: var(--footerColor);
   outline: none;
   border: none;
   resize: none;
   width: 20rem;
-  height: 20vh;
-  margin: auto 2rem;
-  color: var(--fadedWhite);
+  padding: 10px 20px;
+  height: 112px;
+  color: var(--lightText);
+}
+
+.FormButtons {
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 990px) {
@@ -60,7 +67,7 @@
 @media screen and (max-width: 730px) {
   .contact {
     width: 100%;
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
   }
   .content__body__heading__profile h3 {
     font-size: 15px;

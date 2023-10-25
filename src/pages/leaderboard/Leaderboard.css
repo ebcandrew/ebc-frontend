@@ -4,27 +4,34 @@
 
 .leaderboard__btns {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  width: 70%;
   justify-content: center;
   margin: auto;
 }
 
+.tournament__image img {
+  width: 700px;
+  width: 500px;
+}
+
 .leaderboard__btns .btn {
-  width: 30%;
   margin: 1rem;
 }
 
-.leaderboard__btns .btn .button {
-  padding: 0.8rem;
-}
-
-.leaderboard__btns .btn#first .button:first-child {
+.leaderboard__btns #first button {
   background-color: var(--red);
 }
 
 .leaderboard__btns .btn .button {
-  background-color: var(--darkBlue);
+  background-color: var(--BTN);
+  width: auto;
+  padding: 10px 30px;
+}
+
+.leaderboard__btns .btn:hover .button {
+  background-color: var(--red);
+  transition: all 20ms ease-in-out;
 }
 
 .btn > a {
@@ -43,39 +50,49 @@
   border-collapse: collapse;
   width: 100%;
   margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .leaderboard th {
   color: var(--fadedWhite);
   text-align: center;
-  padding: 0.5rem;
   text-transform: uppercase;
 }
 
 .leaderboard td {
-  background-color: var(--darkBlue);
   color: var(--fadedWhite);
   text-align: center;
-  padding: 2rem 0.5rem;
-}
-
-.leaderboard th:nth-child(2) {
-  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .leaderboard table td p.country img {
   width: 20%;
 }
 
-.leaderboard #cstate {
+#cstate {
   display: flex;
   align-items: center;
+  gap: 5px;
   justify-content: space-between;
+  padding-right: 70px;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .leaderboard .profile {
   display: flex;
   align-items: center;
+  gap: 8px;
 }
 
 .leaderboard .name h3 {
@@ -105,6 +122,7 @@
   font-weight: bolder;
   text-transform: uppercase;
   color: var(--red);
+  background-color: transparent;
 }
 
 .leaderboard__loadmore {
@@ -117,12 +135,151 @@
   padding: 0.5rem;
 }
 
+.RankButton {
+  text-transform: capitalize;
+  font-size: 16px;
+  border-bottom: 50px solid var(--red);
+  border-left: 0px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bolder;
+  /* margin-left: -55px; */
+  z-index: 10;
+}
+
+.RankButtonText {
+  margin-top: 12px;
+}
+
+.TableHead {
+  background-color: var(--BTNSecondary);
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.TableHead th:nth-child(2) {
+  margin-right: 310px;
+}
+
+td:nth-child(1) {
+  color: var(--red);
+  font-size: 20px;
+  height: auto;
+  background-color: transparent;
+}
+
+td:nth-child(2) {
+  height: auto;
+  background-color: transparent;
+}
+
+tr {
+  background-color: var(--BTNSecondary) !important;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+tr:nth-child(1) {
+  padding: 0px;
+}
+
+th {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+}
+
+td {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  /* background-color: var(--bgColor); */
+}
+
+.tableValue {
+  width: 60px;
+  height: 45px;
+  text-align: center;
+  background-color: var(--bgColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1080px) {
+  .tournament__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .leaderboard {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 945px) {
+  .TableHead th:nth-child(2) {
+    margin-right: 220px;
+  }
+}
+
+@media screen and (max-width: 858px) {
+  .tournament__image img {
+    width: 600px;
+  }
+
+  .TableHead th:nth-child(2) {
+    margin-right: 90px;
+  }
+
+  #cstate {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: space-between;
+    padding-right: 40px;
+  }
+
+  .leaderboard table {
+    overflow: auto;
+  }
+}
 @media screen and (max-width: 750px) {
   .leaderboard__btns {
     width: 100%;
   }
   .leaderboard__para {
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .leaderboard__btns {
+    width: 100%;
+  }
+  .leaderboard__para {
+    font-size: 12px;
+  }
+
+  .TableHead th:nth-child(2) {
+    margin-right: 20px;
   }
 }
 
@@ -138,9 +295,134 @@
   }
 }
 
+@media screen and (max-width: 665px) {
+  #cstate {
+    padding-right: 0px;
+  }
+
+  .tournament__image img {
+    width: 400px;
+  }
+
+  .table_wrapper {
+    overflow: auto;
+  }
+
+  .tableValue {
+    width: 45px;
+    height: 45px;
+  }
+
+  #cstate .country img {
+    width: 20px !important;
+    object-fit: cover;
+  }
+
+  #cstate .name h3 {
+    font-size: 15px;
+  }
+
+  #cstate .profile a img {
+    width: 25px;
+    height: 25px;
+  }
+
+  #cstate img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .TableHead {
+    width: 100% !important;
+    height: auto !important;
+    /* flex-wrap: wrap; */
+    padding-right: 10px !important;
+    gap: 10px;
+    /* overflow: auto; */
+  }
+
+  tr {
+    width: auto;
+  }
+  tr:nth-child(1) {
+    padding: 0px;
+    width: 100% !important;
+  }
+
+  .TableHead th:nth-child(2) {
+    margin-right: 0px;
+  }
+
+  th {
+    padding-right: 0px;
+  }
+
+  th span {
+    font-size: 12px !important;
+  }
+
+  .RankButton {
+    font-size: 16px;
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .TableHead {
+    width: 100% !important;
+    height: auto !important;
+    padding-right: 10px !important;
+    gap: 10px;
+  }
+  .table_wrapper {
+    overflow: auto;
+  }
+
+  .RankButton {
+    border-bottom: 0px solid transparent;
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    height: auto !important;
+    width: auto;
+  }
+
+  .RankButtonText {
+    margin-top: 0px;
+  }
+
+  tr:nth-child(1) {
+    padding: 10px !important;
+  }
+
+  #cstate .name h3 {
+    font-size: 12px !important;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .leaderboard__btns .btn {
     width: 80%;
+  }
+
+  .tournament__image img {
+    width: 330px;
+  }
+
+  th span {
+    font-size: 9px !important;
+  }
+
+  tr:nth-child(1) {
+    padding: 10px 4px !important;
+  }
+
+  .tableValue {
+    width: 30px;
+    height: 30px;
+  }
+  td {
+    padding: 2px;
+    /* background-color: var(--bgColor); */
   }
 }
 

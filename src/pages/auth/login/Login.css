@@ -1,34 +1,45 @@
 .login {
-  padding: var(--padding);
+  /* padding: var(--padding); */
   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 70px;
+}
+
+.title {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.register {
+  /* padding: var(--padding); */
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-/* .login__text {
+.login__text {
   width: 50%;
+  margin-left: 70px;
 }
 
 .login__cta {
   width: 50%;
-} */
-
-.cta__item {
-  display: flex;
-  align-items: center;
 }
 
 .cta__item p {
-  padding: 1rem;
+  padding: 1rem 0px;
   width: 10rem;
   font-weight: bolder;
-
 }
 
 .cta__item p:first-child .button {
-  width: fit-content;
+  width: 100%;
   margin: 0;
-
 }
 
 .cta__item p:last-child .button {
@@ -47,7 +58,6 @@
 
 .login__text h3 span {
   color: var(--red);
-
 }
 
 .login__text p {
@@ -63,11 +73,10 @@
   font-size: 14px;
 }
 
-
 @media screen and (max-width: 800px) {
   .login {
     flex-direction: column;
-    padding: 1rem;
+    /* padding: 1rem; */
   }
 
   .login__text {
@@ -79,16 +88,9 @@
     width: 100%;
     line-height: 1.5rem;
   }
-
 }
 
 @media screen and (max-width: 630px) {
-
-
-  .cta__item {
-    flex-direction: column;
-  }
-
   .login__text h3 {
     font-size: 2rem;
   }
@@ -98,9 +100,73 @@
     margin-bottom: 30px;
   }
 
-  .login__text p{
+  .login__text p {
     font-size: 1rem;
   }
+}
 
+@media screen and (max-width: 488px) {
+  .BtnWrapper {
+    width: 110px !important;
+  }
 
+  .cta__item {
+    width: 300px !important;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .BtnWrapper {
+    width: 100px !important;
+  }
+
+  .cta__item {
+    width: 260px !important;
+  }
+}
+
+.InnerBTN {
+  margin-top: 12px;
+}
+
+.loginBTNContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.BtnWrapper {
+  text-transform: capitalize;
+  font-size: 16px;
+  border-bottom: 50px solid var(--red);
+  border-left: 0px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bolder;
+  margin-right: 18px;
+}
+
+.cta__item {
+  display: flex;
+  text-transform: capitalize;
+  font-size: 16px;
+  border-bottom: 50px solid var(--footerColor);
+  /* border-left: 0px solid transparent; */
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 340px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bolder;
 }

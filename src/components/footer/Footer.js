@@ -11,6 +11,8 @@ import {
 } from "../imports/imgs/Images";
 import "./Footer.css";
 import { AlertError, AlertSuccess } from "../Alerts/Alert";
+import { HiOutlineArrowUp } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const [email, setEmail] = useState("");
@@ -33,7 +35,6 @@ function Footer() {
     } catch (error) {
       console.log(error);
       setError(true);
-      // error && setErrorMessage(error.response.data?.error.errors.email.message);
       console.log(error.response.data?.stack);
       error && setErrorMessage(error.response.data?.message);
     }
@@ -53,6 +54,9 @@ function Footer() {
       {success && (
         <AlertSuccess message={successMessage} onclick={handleCloseModal} />
       )}
+      <div className="ArrowWrapper">
+        <HiOutlineArrowUp className="ArrowIcon" />
+      </div>
 
       <div className="footer__container">
         <div className="footer__one">
@@ -73,37 +77,37 @@ function Footer() {
           <div className="links">
             <div>
               <ul>
-                <a href="/">
+                <Link to="/">
                   <li> home</li>
-                </a>
+                </Link>
 
-                <a href="/login">
+                <Link to="/login">
                   <li> login</li>
-                </a>
+                </Link>
 
-                <a href="/shop">
+                <Link to="/shop">
                   <li> store</li>
-                </a>
+                </Link>
 
-                <a href="/rules">
+                <Link to="/rules">
                   <li> rules</li>
-                </a>
+                </Link>
               </ul>
             </div>
 
             <div>
               <ul>
-                <a href="/tournament">
+                <Link to="/tournament">
                   <li> tournaments</li>
-                </a>
+                </Link>
 
-                <a href="/leaderboard">
+                <Link to="/leaderboard">
                   <li> leaderboard</li>
-                </a>
+                </Link>
 
-                <a href="/blogs">
+                <Link to="/blogs">
                   <li> blog</li>
-                </a>
+                </Link>
               </ul>
             </div>
           </div>
@@ -111,17 +115,17 @@ function Footer() {
 
         <div className="footer__three">
           <ul>
-            <a href="/">
+            <Link to="/">
               <li> help & support</li>
-            </a>
+            </Link>
 
-            <a href="/">
+            <Link to="/">
               <li> privacy policy</li>
-            </a>
+            </Link>
 
-            <a href="/">
+            <Link to="/">
               <li> term of use</li>
-            </a>
+            </Link>
           </ul>
         </div>
 
@@ -131,70 +135,68 @@ function Footer() {
           <p>Subscribe us now to get the latest news and update</p>
 
           <div className="box">
-            <p>
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Email Address"
-              />
-            </p>
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Email Address"
+            />
 
-            <p onClick={handleNewsSubscribe}>
-              <MailOutlineIcon />
-            </p>
+            <span onClick={handleNewsSubscribe}>
+              <MailOutlineIcon className="FooterIcon" />
+            </span>
           </div>
         </div>
       </div>
 
-      <div className="footer__location">
-        <div className="icon">
-          <LocationOnIcon />
-        </div>
-
-        <div className="text">
-          <h3>toronto</h3>
-
-          <p>100 Queen St W, Toronto, ON M5H 2N2, Canada</p>
-        </div>
-      </div>
-
-      <div className="footer__last">
-        <div className="copyright">
-          <p>© 2023 EBC. All rights reserved.</p>
-          <div className="dev__by">
-            <a href="https://apnadevs.com" target="_blank" rel="noreferrer">
+      <div>
+        <div className="footer__location">
+          <div className="text">
+            <h3>toronto</h3>
+            <div className="LocationContainer">
               {" "}
-              Website Development By ApnaDevs{" "}
+              <div className="icon">
+                <LocationOnIcon />
+              </div>{" "}
+              <p className="FooterLocationName">
+                2297625 Ontario Inc86-50 Burnhamthorpe Rd WBox 317 Mississauga,
+                ON L5B 3C2
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="footer__last">
+          <div className="copyright">
+            <span>© 2023 EBC. All rights reserved.</span>
+          </div>
+          <div className="socials">
+            <a
+              href="https://www.facebook.com/people/EBC-Esports/100092606197171/
+"
+            >
+              <img src={FbFoot} alt="" />
+            </a>
+
+            <a
+              href="https://instagram.com/ebc_esports?igshid=ZGUzMzM3NWJiOQ==
+          "
+            >
+              <img src={InstaFoot} alt="" />
+            </a>
+
+            <a href="https://www.twitch.tv/ebc_esports">
+              <img src={MsgFoot} alt="" />
+            </a>
+
+            <a href="https://twitter.com/ebc_esports">
+              <img src={TwitterFoot} alt="" />
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCjJqDd6PV05Wk9Eow4ckOKQ">
+              <img src={YtFoot} alt="" />
             </a>
           </div>
-        </div>
-        <div className="socials">
-          <a
-            href="https://www.facebook.com/people/EBC-Esports/100092606197171/
-"
-          >
-            <img src={FbFoot} alt="" />
-          </a>
-
-          <a
-            href="https://instagram.com/ebc_esports?igshid=ZGUzMzM3NWJiOQ==
-          "
-          >
-            <img src={InstaFoot} alt="" />
-          </a>
-
-          <a href="https://www.twitch.tv/ebc_esports">
-            <img src={MsgFoot} alt="" />
-          </a>
-
-          <a href="https://twitter.com/ebc_esports">
-            <img src={TwitterFoot} alt="" />
-          </a>
-
-          <a href="https://www.youtube.com/channel/UCjJqDd6PV05Wk9Eow4ckOKQ">
-            <img src={YtFoot} alt="" />
-          </a>
         </div>
       </div>
     </div>

@@ -55,8 +55,10 @@ function RsvpComp() {
           </h3>
 
           <p>
-            Nulla rutrum sem turpis, at pretium quam porttitor in. Integer
-            sodales at enim et blandit. Aliquam dignissim vestibulum hendrerit.
+            We are gathered here today to celebrate the spirit of competition,
+            skill, and sportsmanship. Before we embark on this thrilling
+            journey, take a moment to check out your fellow competitors, the
+            talented individuals who will share the arena with you.
           </p>
 
           <Button text={"Join/Leave Tournament"} />

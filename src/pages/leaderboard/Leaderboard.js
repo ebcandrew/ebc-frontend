@@ -9,22 +9,24 @@ import {
 } from "../../components/imports/imgs/Images";
 import Heading from "../../components/text/Heading";
 import "./Leaderboard.css";
+import { Link } from "react-router-dom";
 
 function Leaderboard() {
   const [leaderboard, setLeaderboard] = useState([]);
   // const PF = "http://localhost:5000/imgs/users/";
-  const PF = `${process.env.REACT_APP_API_PUB}/users/`;
+  const PF = `${process.env.REACT_APP_PUBLIC_FOLDER_PUB}/users/`;
 
   const defaultPic =
     "https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-25.jpg";
 
   useEffect(() => {
     try {
+      console.log("api hitting");
       const fetchLeaderboard = async () => {
         await axios.get("/leagues/top-players").then((res) => {
           console.log(res.data?.data.worldwide);
           setLeaderboard(res.data?.data);
-          console.log(res.data?.data)
+          console.log(res, "no response");
         });
       };
 
@@ -131,7 +133,7 @@ function Leaderboard() {
         </div>
 
         <div className="tournament__image">
-          <img src={LeaderboardBanner} alt="" />
+          <img src={LeaderboardBanner} style={{ width: "100%" }} alt="" />
         </div>
       </div>
 
@@ -140,24 +142,22 @@ function Leaderboard() {
           <Button text={"world wide"} />
         </div>{" "}
         <div className="btn">
-          <a href="/continental">
+          <Link to="/continental">
             <Button text={"Contentential"} />
-          </a>
+          </Link>
         </div>
         <div className="btn">
-          <a href="/regional">
+          <Link to="/regional">
             <Button text={"country & regional"} />
-          </a>
+          </Link>
         </div>
       </div>
 
       <Heading text={"best in the world"} />
 
       <div className="leaderboard__para">
-        Nulla rutrum sem turpis, at pretium quam porttitor in. Integer sodales
-        at enim et blandit. Aliquam dignissim vestibulum hendrerit. Quisque
-        dapibus blandit metus. Nulla rutrum sem turpis, at pretium quam
-        porttitor in.
+        This web page showcases the world's top players, presenting
+        comprehensive stats like win-loss percentages and rankings.
       </div>
       <div className="table_wrapper">
         <table>
@@ -190,20 +190,20 @@ function Leaderboard() {
 
                   {value.profilePhoto === defaultPic ? (
                     <p className="profile">
-                      <a href={`/view-user/${value._id}`}>
+                      <Link to={`/view-user/${value._id}`}>
                         <img src={defaultPic} alt="" />
-                      </a>
+                      </Link>
                       <img src={value.art} alt="" />
                     </p>
                   ) : (
                     <p className="profile">
-                      <a href={`/view-user/${value._id}`}>
+                      <Link to={`/view-user/${value._id}`}>
                         <img
                           src={PF + value.profilePhoto}
                           alt=""
                           crossOrigin="anonymous"
                         />
-                      </a>
+                      </Link>
                       <img src={value.art} alt="" />
                     </p>
                   )}

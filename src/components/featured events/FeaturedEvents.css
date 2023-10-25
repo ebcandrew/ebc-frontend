@@ -22,23 +22,34 @@
 }
 
 .featuredevents__heading .tag {
-  color: white;
-  background-color: var(--red);
-  padding: 1rem;
   font-weight: bolder;
   text-transform: uppercase;
+  border-bottom: 50px solid var(--red);
+  border-left: 0px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.featuredevents__heading .tag p {
+  font-weight: 700;
+  color: white;
+  margin-top: 14px;
+  font-size: 13px;
 }
 
 .featuredevents__heading .link {
   display: flex;
+  gap: 10px;
   align-items: center;
+  padding: 5px 10px;
 }
 
 .featuredevents__heading .link .MuiSvgIcon-root {
-  margin-left: 1rem;
   color: var(--red);
-  font-size: 18px;
-  padding-right: 1rem;
+  font-size: 22px;
 }
 
 .featuredevents__list__item {
@@ -46,26 +57,27 @@
   align-items: center;
   justify-content: space-between;
   background-color: var(--bgColor);
-  padding: 1rem;
+  padding: 0.5rem;
   margin-bottom: 1rem;
 }
 
 .featuredevents__list__item .scores {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 50%;
+  gap: 80px;
 }
 
 .featuredevents__list__item .scores img {
-  width: 80px;
-  height: 80px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
 }
 
 .featuredevents__list__item .scores .score {
   color: var(--fadedWhite);
-  font-size: 20px;
+  font-size: 35px;
   font-weight: bolder;
 }
 
@@ -78,6 +90,7 @@
   padding: 0.2rem 0.5rem;
   color: var(--fadedWhite);
   font-weight: bolder;
+  font-size: 21px;
 }
 
 .featuredevents__list__item .league .name {
@@ -88,7 +101,10 @@
 }
 
 .featuredevents__list__item .league {
-  line-height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
 }
 
 .featuredevents__list__item .league .cup {
@@ -110,13 +126,85 @@
   font-size: 14px;
   font-weight: bolder;
   text-transform: uppercase;
-  align-items: center;
+  align-items: start;
+}
+
+@media (max-width: 1350px) {
+  .featuredevents__list__item .league {
+    width: 40%;
+  }
+
+  .featuredevents__list__item .scores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 1230px) {
+  .featuredevents__list__item .league {
+    width: 50%;
+  }
+
+  .featuredevents__list__item .scores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .featuredevents__list__item .league {
+    width: 40%;
+  }
+
+  .featuredevents__list__item .scores {
+    width: 50%;
+    gap: 30px;
+  }
+
+  .featuredevents__list__item .scores img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+
+  .featuredevents__list__item .scores .score {
+    color: var(--fadedWhite);
+    font-size: 28px;
+    font-weight: bolder;
+  }
 }
 
 @media (max-width: 800px) {
   .featuredevents {
     width: 100%;
     padding: 1rem 0;
+  }
+  .featuredevents__list__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgColor);
+    /* padding: 0.5rem; */
+    /* margin-bottom: 1rem; */
+  }
+
+  .featuredevents__list__item .league {
+    width: auto;
+    gap: 20px;
+  }
+
+  .featuredevents__list__item .scores {
+    /* width: 100%; */
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
   }
 }
 

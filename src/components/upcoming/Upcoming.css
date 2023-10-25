@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 .upcoming__container__list {
@@ -73,18 +74,96 @@
   height: 10px;
 }
 
-@media screen and (max-width: 1200px) {
-  .upcoming {
-    width: 100%;
-    padding: 1rem 0;
+.upcoming__container__cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 600px;
+  /* width: 600px; */
+  /* background-color: red; */
+}
+
+.upcoming__container__cards img:nth-child(1) {
+  width: 350px;
+  object-fit: contain;
+}
+
+.upcoming__container__cards img:nth-child(2) {
+  height: 255px;
+  object-fit: contain;
+}
+
+.upcoming__container__cards img:nth-child(3) {
+  object-fit: contain;
+}
+
+.upcoming__container__cards img:nth-child(4) {
+  width: 330px;
+}
+
+.featuredevents__heading p {
+  margin: 0;
+}
+@media screen and (max-width: 620px) {
+  .upcoming__container__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 400px;
   }
 
-  .upcoming__container {
+  .upcoming__container__cards img:nth-child(1) {
+    width: 230px;
+    object-fit: contain;
+  }
+
+  .upcoming__container__cards img:nth-child(2) {
+    height: 170px;
+    object-fit: contain;
+  }
+
+  .upcoming__container__cards img:nth-child(3) {
+    width: 170px;
+    object-fit: contain;
+  }
+
+  .upcoming__container__cards img:nth-child(4) {
+    width: 230px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .name__items section {
     flex-direction: column;
   }
+  .upcoming__container__cards img {
+    width: 60%;
+  }
+  .name__items h3 {
+    font-size: 14px;
+  }
 
-  .upcoming__container__list {
-    width: 100%;
+  .upcoming__container__cards {
+    width: 300px;
+  }
+
+  .upcoming__container__cards img:nth-child(1) {
+    width: 170px;
+    object-fit: contain;
+  }
+
+  .upcoming__container__cards img:nth-child(2) {
+    height: 170px;
+    object-fit: contain;
+  }
+
+  .upcoming__container__cards img:nth-child(3) {
+    width: 170px;
+    object-fit: contain;
+  }
+
+  .upcoming__container__cards img:nth-child(4) {
+    width: 170px;
   }
 }
 

@@ -1,0 +1,362 @@
+.Host_Selection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.Host_Selection h1 {
+  font-size: 5vh;
+  text-transform: uppercase;
+}
+
+.Host_Selection_PartI {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: auto;
+  padding: 0 2% 3% 0;
+  background-color: #1e2229;
+}
+
+.Part_number {
+  font-weight: bolder;
+  text-transform: uppercase;
+  border-bottom: 50px solid var(--red);
+  border-left: 0px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.Part_number h3 {
+  font-size: 3vh;
+  margin-top: 10px;
+  font-weight: bold;
+  font-family: sans-serif;
+  /* margin: 0; */
+  color: white;
+}
+
+.PartI_Input {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  color: white;
+  padding-left: 3%;
+  padding-top: 2%;
+}
+
+.PartI_Input h3 {
+  margin-bottom: 5%;
+  font-size: 3vh;
+}
+
+.PartI_Input p {
+  margin-bottom: 5%;
+  color: #eeeeee99;
+}
+
+.Bracket_Dropdown,
+.AllowedTeams_Dropdown {
+  background-color: #1a1e24;
+  border: 0;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 2% 30% 2% 2%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.AllowedTeams_Dropdown {
+  margin-top: 2%;
+  padding: 2% 28% 2% 2%;
+}
+
+.Bracket_Dropdown option,
+.AllowedTeams_Dropdown option {
+  font-size: 3vh;
+  font-weight: 100;
+}
+
+.EventDetails_labels {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  float: left;
+  width: 26vw;
+  padding-right: 20vh;
+}
+
+.EventDetails_labels h2 {
+  height: 10vh;
+  margin-bottom: 6vh;
+  font-size: 3vh;
+  font-weight: lighter;
+}
+
+.EventDetails_Inputs {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: start;
+  float: left;
+}
+
+.EventDetails_Inputs textarea {
+  width: 30vw;
+  height: 20vh;
+}
+
+.EventDetails_Inputs input[type="text"] {
+  width: 30vw;
+  height: 10vh;
+  margin-bottom: 2vh;
+}
+
+.EventDetails_Inputs input[type="number"] {
+  width: 10vw;
+  height: 10vh;
+  margin-bottom: 2vh;
+}
+
+.Number_input {
+  display: flex;
+  width: 30vw;
+}
+
+.Number_input input {
+  width: 20%;
+  height: 8vh;
+  background-color: #1a1e24;
+  border: 0;
+  color: white;
+  /* padding: 2%; */
+  text-align: center;
+  margin: 0 10% 0 0;
+}
+
+.Host_Part3_Container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+  padding: 2%;
+  padding-left: 0;
+  background-color: #1e2229;
+}
+
+.Host_Part3_Container h2 {
+  width: 23vw;
+  color: white;
+  font-family: sans-serif;
+  font-size: 3vh;
+  margin: 2% 0 0 5%;
+}
+
+.Host_Part3_Container input[type="text"],
+.Host_Part3_Container input[type="number"] {
+  width: 70%;
+  height: 10vh;
+  background-color: #1a1e24;
+  border: 0;
+  color: white;
+  text-align: center;
+}
+
+.Host_Part3_Container input[type="number"] {
+  width: 32%;
+  margin-right: 1vw;
+}
+
+.Host_Part3_Container textarea {
+  width: 100%;
+  height: 40vh;
+  background-color: #1a1e24;
+  border: 0;
+  color: white;
+  margin: 4% 0 0 1%;
+}
+
+.Part3_Fields {
+  margin-bottom: 3vh;
+  display: flex;
+  align-items: center;
+}
+
+.input[type="radio"] {
+  background-color: #1e2229;
+  padding: 1vh;
+}
+
+/* Custom style for the radio button container */
+.radio-container {
+  /* padding: 8px; */
+  color: white;
+  /* width: 67%; */
+  font-weight: lighter;
+}
+
+/* Custom style for the radio button when it's checked */
+input[type="radio"]:checked + .radio-container {
+  color: #e00016;
+}
+
+.Create-btn {
+  background-color: #e00016;
+  border: 0;
+  padding: 1.5% 4% 1.5% 4%;
+  color: white;
+  font-size: medium;
+  font-weight: lighter;
+  font-family: sans-serif;
+  width: 20vw;
+  margin-left: 40%;
+  margin-top: 10%;
+}
+
+.ShareURL_Section {
+  width: 46%;
+  height: 10vh;
+  /* margin-right: 43px; */
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25%;
+}
+
+.ShareURL_Section input {
+  background-color: #1e2229;
+  padding: 2% 10% 2% 2%;
+  color: white;
+  border: 0;
+  height: 10vh;
+  width: 60vw;
+  font-size: 3vh;
+}
+
+.Share-btn {
+  background-color: #e00016;
+  color: white;
+  font-size: 3vh;
+  margin-left: 10px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  padding: 3% 5% 3% 5%;
+  border: 0;
+}
+
+@media (max-width: 890px) {
+  .Host_Part3_Container h2 {
+    font-size: 18px !important;
+    color: white;
+    font-family: sans-serif;
+    font-size: 3vh;
+    margin: 2% 0 0 5%;
+  }
+}
+
+@media (max-width: 680px) {
+  .Host_Part3_Container h2 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px !important;
+    margin: 2% 0 0 5%;
+  }
+}
+
+@media (max-width: 525px) {
+  .Host_Selection h1 {
+    font-size: 2.5vh;
+  }
+
+  .Host_Selection {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .PartI_Input h3 {
+    font-size: 2vh;
+  }
+
+  .Part_number {
+    /* width: 3%; */
+    height: 1vh;
+  }
+
+  .Part_number h3 {
+    font-size: 3vh;
+  }
+
+  .Bracket_Dropdown option,
+  .AllowedTeams_Dropdown option {
+    font-size: 1.5vh;
+  }
+
+  .checkmark {
+    top: 0px;
+  }
+
+  .Host_Part3_Container h2 {
+    font-size: 1.5vh;
+  }
+
+  .Time_Dropdown {
+    padding-left: 19%;
+    padding-right: 19%;
+  }
+
+  .Create-btn {
+    width: 50%;
+    font-size: small;
+    margin-left: 25%;
+  }
+
+  .Share-btn {
+    font-size: 2vh;
+  }
+
+  .Host_Part3_Container h2 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px !important;
+    margin: 2% 0 0 5%;
+  }
+}
+@media (max-width: 680px) {
+  .Host_Part3_Container h2 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px !important;
+    margin: 2% 0 0 5%;
+    word-wrap: break-word !important;
+  }
+}
+
+.HostTournamentRadioWrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.HostTournamentRadioWrapperBox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.HostTournamentRadioWrapper .radio-container {
+  padding: 8px;
+  color: white;
+  width: 67%;
+  font-weight: lighter;
+}
+.HostTournamentRadioWrapper input {
+  margin-top: 14px;
+}

@@ -229,7 +229,7 @@ function Tournamenthost() {
         </div>
 
         <div className="tournament__image">
-          <img src={Tourna} alt="" />
+          <img src={Tourna} style={{ width: "100%" }} alt="" />
         </div>
       </div>
 

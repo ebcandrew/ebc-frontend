@@ -35,7 +35,7 @@
 }
 
 .leaguetable__banner__img .header__footer__arrows {
-  width: 10%;
+  width: 30%;
   margin-bottom: 2rem;
 }
 
@@ -52,13 +52,20 @@
   text-align: center;
 }
 
-.leaguetable__banner__footer .header__footer__fixtures .header__footer__fixtures__display p {
+.leaguetable__banner__footer
+  .header__footer__fixtures
+  .header__footer__fixtures__display
+  p {
   font-weight: bolder;
   color: var(--fadedWhite);
   margin: auto 0.3rem;
 }
 
-.leaguetable__banner__footer .header__footer__fixtures .header__footer__fixtures__display p span {
+.leaguetable__banner__footer
+  .header__footer__fixtures
+  .header__footer__fixtures__display
+  p
+  span {
   color: var(--red);
   border: none;
 }
@@ -142,6 +149,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.matchUpItemFlexWrapper {
+  border-bottom: 50px solid var(--red);
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
 }
 
 .matchup__item__flex .score {
@@ -267,7 +284,8 @@
 }
 
 .username.btn {
-  background-color: var(--darkBlue);
+  width: 100%;
+  background-color: var(--BTNSecondary);
 }
 
 .username.btn .button {
@@ -284,14 +302,18 @@
   padding: 0.6rem;
 }
 
-@media screen and (max-width:1280px) {
+.username {
+  width: 100%;
+  background-color: var(--BTNSecondary);
+}
+
+@media screen and (max-width: 1280px) {
   .leaguetable__banner__footer {
     flex-direction: column;
-
   }
 }
 
-@media screen and (max-width:880px) {
+@media screen and (max-width: 880px) {
   .leaguetable__banner {
     flex-direction: column;
   }
@@ -331,10 +353,9 @@
   .matchup__item__timer p {
     font-size: 12px;
   }
-
 }
 
-@media screen and (max-width:650px) {
+@media screen and (max-width: 650px) {
   .matchup__item__flex .score {
     flex-direction: column;
   }
@@ -345,7 +366,6 @@
 
   .rsvp .leaguetable__banner .leaguetable__banner__text h3 {
     margin-bottom: 1rem;
-
   }
 
   .leaguetable__banner__text h3 {
@@ -357,8 +377,12 @@
   }
 }
 
-@media screen and (max-width:520px) {
+@media screen and (max-width: 520px) {
   .matchup__item__flex {
     flex-direction: column;
+  }
+
+  .matchup__item__flex img#first {
+    left: 65%;
   }
 }

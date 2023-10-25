@@ -1,0 +1,336 @@
+.draftbt .league__banner__1 {
+  width: 65%;
+}
+
+.draftbt .league__banner__2 {
+  width: 80%;
+}
+
+.draftbt .league__banner__1 h3 {
+  width: 90%;
+}
+
+.draftbt .league__banner__1__text {
+  color: var(--red);
+  text-transform: capitalize;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.draftbt .league__banner__1__text span {
+  color: var(--fadedWhite);
+}
+
+.draftbt__body p {
+  color: var(--fadedWhite);
+}
+
+.draftbt__body p.subtext {
+  font-size: 14px;
+  color: var(--lightText);
+}
+
+.draftbt__body__item {
+  display: flex;
+  margin: 2rem 0;
+  background-color: var(--BTNSecondary);
+  padding: 2rem;
+}
+
+.draftbt__body__item .item__btn,
+.draftbt__body__item .other__items {
+  /* width: 30%; */
+  margin-right: 2rem;
+}
+
+.draftbt__body__item .other__items,
+.draftbt__body__item .other__items__2 {
+  width: 100%;
+}
+
+.draftbt__body__item .other__items h3 {
+  color: var(--fadedWhite);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 16px;
+}
+
+.draftbt__body__item .other__items p {
+  color: var(--lightText);
+  margin-bottom: 1rem;
+  font-size: 14px;
+}
+
+.draftbt__body__item .other__items input {
+  color: var(--lightText);
+  margin-bottom: 1rem;
+  width: 30%;
+  border: none;
+  outline: none;
+  background-color: var(--bgColor);
+  padding: 1rem;
+}
+
+.spicie__rows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem auto;
+}
+
+.spicie__rows.banned {
+  margin: 1rem 0;
+}
+
+.spicie__select-contianer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.spicie__select-contianer h1 {
+  color: var(--fadedWhite);
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.spicie__rows.banned .select,
+.spicie__rows.banned .spicie__select,
+.spicie__rows.banned .spicie__rows__input {
+  background-color: var(--red);
+}
+
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.614);
+}
+
+.spicie__rows .select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bgColor);
+  width: 280px;
+  /* padding: 0.5rem; */
+  position: relative;
+}
+
+.spicie__rows.banned .dropdown-header:hover,
+.spicie__rows.banned .dropdown-item:hover {
+  background-color: #a60313;
+}
+
+.spicie__rows.banned .dropdown-list {
+  background-color: var(--red);
+  border: none;
+}
+
+.spicie__rows .select p {
+  color: var(--fadedWhite);
+  font-weight: bolder;
+}
+.spicie__rows .dropdown-header p {
+  color: var(--fadedWhite);
+  font-weight: bolder;
+}
+
+.spicie__rows p {
+  text-transform: capitalize;
+}
+
+.spicie__select {
+  height: 100%;
+  display: flex;
+  width: 200px;
+  align-items: center;
+}
+
+.spicie__rows__input {
+  background-color: var(--bgColor);
+  border: none;
+  outline: none;
+  color: var(--fadedWhite);
+}
+
+.spicie__select__btn .active .MuiSvgIcon-root {
+  color: var(--red);
+  cursor: pointer;
+}
+.spicie__select__btn .inactive .MuiSvgIcon-root {
+  color: var(--fadedWhite);
+  cursor: pointer;
+}
+
+.spicie__select {
+  color: var(--fadedWhite);
+  background-color: var(--bgColor);
+  padding: 0.5rem;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+
+.spicie__select__btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spicie__select__btn p {
+  font-size: 14px;
+  font-weight: bolder;
+  text-transform: capitalize;
+  color: var(--fadedWhite);
+}
+
+.spicie__select__btn .MuiSvgIcon-root {
+  font-size: 30px;
+}
+
+.other__items__2 h3 {
+  color: var(--fadedWhite);
+  text-transform: uppercase;
+  font-size: 16px;
+  /* margin-bottom: 1rem; */
+}
+
+.other__items__2 p {
+  color: var(--lightText);
+}
+
+.spicie__row__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.spicie__row__button .button {
+  margin: 1rem;
+  padding: 0.7rem;
+}
+
+.other__items .team__select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  background-color: var(--bgColor);
+  /* padding: 0.5rem; */
+  position: relative;
+}
+
+.other__items .team__select div {
+  font-weight: bolder;
+  text-transform: capitalize;
+  color: var(--fadedWhite);
+}
+
+.other__items .team__select div {
+  font-weight: bolder;
+  text-transform: capitalize;
+  color: var(--fadedWhite);
+}
+
+.other__items .team__select .dropdown-header p {
+  font-weight: bolder;
+  text-transform: capitalize;
+  color: var(--fadedWhite);
+}
+
+.other__items__select__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+#calc {
+  color: var(--red);
+  margin: 1rem 0;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+
+.other__items__select__flex .team__select2 {
+  margin-top: 1rem;
+  background-color: var(--bgColor);
+  font-weight: bolder;
+  text-transform: capitalize;
+  width: 40%;
+  color: var(--fadedWhite);
+  padding: 0.5rem;
+}
+
+.other__items__select__flex .team__select p {
+  margin: 0;
+}
+
+.other__items__select__flex.tts {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.other__items__select__flex.tts div {
+  background-color: var(--bgColor);
+  padding: 0.5rem;
+  text-transform: capitalize;
+  color: var(--fadedWhite);
+  margin: 0.5rem;
+  font-weight: bolder;
+  width: 20%;
+}
+
+.other__items__select__flex.tts div:first-child {
+  background-color: transparent;
+}
+
+.other__items__rule__item {
+  margin: 3em 0;
+}
+
+.rule__load__more {
+  width: 30%;
+  margin: auto;
+}
+
+.rule__load__more .button {
+  margin-bottom: 2rem;
+  padding: 0.8rem;
+}
+
+.DraftButtonWrapper {
+  width: 100%;
+  display: flex;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+@media (max-width: 1086px) {
+  .spicie__select-contianer {
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 660px) {
+  .spicie__row__button {
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+    justify-content: flex-start;
+  }
+
+  .other__items__select__flex {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 660px) {
+  .draftbt__body__item {
+    gap: 15px;
+    flex-direction: column !important;
+  }
+}

@@ -1,0 +1,15 @@
+.StatContainer {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.LoadMoreButtons {
+  padding: 10px 60px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: red;
+}

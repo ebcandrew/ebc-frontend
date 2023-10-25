@@ -24,7 +24,7 @@
 }
 
 .league__table th {
-  width: 100rem;
+  /* width: 100rem; */
   text-align: center;
   padding: 0.5em;
   margin: 1rem auto;
@@ -42,6 +42,13 @@
   text-transform: capitalize;
 }
 
+.league__table th:first-child {
+  /* width: 100rem; */
+  text-align: center;
+  padding: 0.5em;
+  margin: 0rem 3.1rem;
+}
+
 .lea section {
   display: flex;
   align-items: center;
@@ -49,7 +56,7 @@
 
 .lea td {
   /* width: 10rem; */
-  width: 20rem;
+  /* width: 9rem; */
 
   text-align: center;
 }
@@ -68,10 +75,21 @@
 
 #banned {
   background-color: var(--red);
+  margin: 5px;
+}
+
+#banned img {
+  width: 80px;
+}
+
+.clubimg {
+  width: 50%;
+  margin: 10px;
+  background-color: var(--BTNSecondary);
 }
 
 .clubimg img {
-  width: 50%;
+  width: 80px;
 }
 
 .league__banner {
@@ -85,7 +103,7 @@
   width: 100%;
 }
 
-.league__banner>div img {
+.league__banner > div img {
   width: 100%;
 }
 
@@ -121,7 +139,7 @@
   margin-bottom: 1rem;
 }
 
-@media screen and (max-width:950px) {
+@media screen and (max-width: 950px) {
   .league__banner {
     flex-direction: column;
   }
@@ -136,14 +154,13 @@
 
   .lea td {
     width: 10rem;
-
   }
-  .league__banner{
+  .league__banner {
     margin-top: 0;
   }
 }
 
-@media screen and (max-width:650px) {
+@media screen and (max-width: 650px) {
   .lea section {
     flex-direction: column;
   }
@@ -155,16 +172,15 @@
   .league__flag img {
     width: 50%;
   }
-  .league__banner__1 h3{
+  .league__banner__1 h3 {
     font-size: 30px;
   }
-  .league__banner__1__text{
+  .league__banner__1__text {
     font-size: 14px;
   }
 }
 
-@media screen and (max-width:520px) {
-
+@media screen and (max-width: 520px) {
   .clubimg img {
     width: 50%;
   }

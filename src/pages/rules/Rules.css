@@ -1,6 +1,10 @@
 .rules__load__more {
-  width: 50%;
-  margin: auto;
+  width: 100%;
+  /* margin: auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
 
 .rules__load__more .button {
@@ -9,9 +13,8 @@
   padding: 0.7rem;
 }
 
-
 @media screen and (max-width: 500px) {
   .rules__load__more .button {
-    width:100%;
+    width: 100%;
   }
 }

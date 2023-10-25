@@ -6,8 +6,7 @@ import "./Featured.css";
 
 function Featured() {
   const [featured, setFeatured] = useState([]);
-  error.response.data?.error._message = `${process.env.REACT_APP_PUBLIC_FOLDER_PUB}/imgs/blogs/`;
-
+  error.response.data?.error._message = "http://localhost:5000/imgs/blogs/";
 
   useEffect(() => {
     try {

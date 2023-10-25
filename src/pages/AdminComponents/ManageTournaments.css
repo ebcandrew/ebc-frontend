@@ -1,0 +1,504 @@
+.ManageTournament_HeroSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+  background-color: #14181d;
+}
+
+.HeroSection_Left,
+.HeroSection_Right {
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
+.Title-HeroSection,
+.Title-HeroSection h1 {
+  font-family: sans-serif;
+  font-size: 10vh;
+  font-weight: 900;
+  line-height: 5vh;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  margin-top: 4%;
+  /* display: flex; */
+}
+
+.Title-HeroSection h1 {
+  color: #e00016;
+}
+
+.HeroSection_Right img {
+  width: 100%;
+  height: 70vh;
+}
+
+.Host-btn {
+  border: 0;
+  background-color: #e00016;
+  border-radius: 0%;
+  padding: 2%;
+  font-weight: bolder;
+  color: white;
+  margin: 5%;
+}
+
+.Manage_container {
+  width: 100%;
+  height: auto;
+  padding: 1% 0% 0%;
+  background-color: #191d23;
+}
+
+.Selection_Dropdown {
+  background-color: #e00016;
+  border: 0;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 2vh;
+  padding: 1%;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Selection_Dropdown option {
+  /* background-color: #E00016; */
+  font-size: 2vh;
+}
+
+.Current_Tournament_League,
+.Upcoming_Tournament_League,
+.Concluded_Tournament_League {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.Current_Tournament_League h1,
+.Upcoming_Tournament_League h1,
+.Concluded_Tournament_League h1 {
+  margin-top: 2%;
+  color: white;
+  font-size: 5vh;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.Current_Records,
+.Concluded_Records {
+  width: 90%;
+  height: auto;
+  padding: 4% 1% 4% 1%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.Concluded_Records {
+  padding: 4% 2% 4% 3%;
+  background-color: #1e2229;
+  margin-bottom: 2%;
+}
+
+.Current_Record_trophy {
+  width: 8vw;
+  height: 18vh;
+  border-radius: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5vh;
+  margin-left: 3vh;
+}
+
+.Current_Records:hover .Current_Record_trophy {
+  background-color: #191d23;
+}
+
+.Current_Records:hover .Manage-btn {
+  background-color: #191d23;
+}
+
+.Current_Records:hover {
+  background-color: #e00016;
+}
+
+.Tournament_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.Tournament_info h2 {
+  color: white;
+  font-size: 4vh;
+}
+
+.Tournament_info div {
+  display: flex;
+  color: white;
+  font-size: 1.2vw;
+}
+
+.Manage-btn {
+  background-color: #e00016;
+  border: 0;
+  padding: 2% 4% 2% 4%;
+  color: white;
+  font-size: medium;
+  font-family: sans-serif;
+  margin-left: 40%;
+}
+
+.image-container {
+  display: flex;
+}
+
+.image-box {
+  position: relative;
+  margin: 2vh 3vh 2vh 3vh;
+}
+
+.image-box img {
+  width: 27vw;
+  height: 45vh;
+  display: block;
+}
+
+.hover-window {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #bc0b1e;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.hover-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* Make the hover content fill the height of the hovered window */
+  padding: 10px;
+}
+
+.image-box:hover .hover-window {
+  height: 100%;
+  /* Adjust the height to show more or less text */
+}
+
+.hover-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* Make the hover content fill the height of the hovered window */
+  padding: 10px;
+}
+
+.Manage-hover-btn {
+  background-color: #bc0b1e;
+  border-radius: 0%;
+  border: 2px solid white;
+  margin-top: 10%;
+  padding: 4% 14% 4% 14%;
+  color: white;
+  font-size: medium;
+  font-weight: lighter;
+  font-family: sans-serif;
+}
+
+.text-bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 8px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.text-bottom-left h5 {
+  font-size: 3vh;
+  font-weight: 750;
+  margin: 0;
+}
+
+.See_All_Link {
+  width: 92%;
+  /* height: 10vh; */
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #191d23;
+  /* margin-bottom: 9vh; */
+  /* margin-left: -37px; */
+}
+
+.All_tournaments {
+  width: 20%;
+  height: auto;
+  background-color: #e00016;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+}
+
+.All_tournaments h2 {
+  font-size: medium;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin: 0;
+  color: white;
+}
+
+.See_All {
+  width: 99%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-color: #1e2229;
+  padding-right: 3%;
+}
+
+.See_All p {
+  margin: 0;
+  font-size: large;
+  font-family: sans-serif;
+  color: #e00016;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.Concluded_tournament_info {
+  /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start; */
+}
+
+.Concluded_tournament_teams {
+  color: #e00016;
+  font-size: 75%;
+  margin-bottom: 5%;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.Concluded_tournament_info h4 {
+  color: white;
+  font-weight: bold;
+  margin: 2% 0 2% 0;
+}
+
+.Concluded_tournament_date {
+  color: white;
+  font-weight: lighter;
+  font-family: sans-serif;
+  font-size: small;
+}
+
+.Concluded_Teams {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-left: 15%;
+}
+
+.Concluded_Teams img {
+  width: 9vw;
+  height: 14vh;
+  margin: 1vh;
+}
+
+.scrollToTop {
+  margin-left: 50%;
+}
+
+@media (max-width: 1125px) {
+  .Manage-btn {
+    margin-left: 20%;
+  }
+}
+
+@media (max-width: 1030px) {
+  .ManageTournament_HeroSection {
+    flex-direction: column;
+  }
+
+  .Title-HeroSection,
+  .Title-HeroSection h1 {
+    font-family: sans-serif;
+    font-size: 6vh;
+    font-weight: 900;
+    line-height: 5vh;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 4%;
+    /* display: flex; */
+  }
+
+  .HeroSection_Right {
+    width: 400px;
+  }
+
+  .HeroSection_Right img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .Current_Tournament_League h1,
+  .Upcoming_Tournament_League h1,
+  .Concluded_Tournament_League h1 {
+    margin-top: 2%;
+    color: white;
+    font-size: 3vh;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+
+  .Manage-btn {
+    background-color: #e00016;
+    border: 0;
+    padding: 2% 4% 2% 4%;
+    color: white;
+    font-size: medium;
+    font-family: sans-serif;
+    margin-left: 9%;
+  }
+
+  .Tournament_info h2 {
+    color: white;
+    font-size: 3vh;
+  }
+
+  .image-container {
+    flex-direction: column;
+  }
+
+  .image-box img {
+    width: 350px;
+    height: 300px;
+  }
+
+  .All_tournaments h2 {
+    font-size: small;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+    color: white;
+  }
+
+  .All_tournaments {
+    width: 40%;
+  }
+
+  .Concluded_Teams {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-left: 10%;
+  }
+
+  .Concluded_tournament_teams {
+    font-size: 65%;
+    margin-bottom: 5%;
+  }
+
+  .Concluded_tournament_info h4 {
+    font-size: 10px;
+  }
+
+  .Concluded_tournament_date {
+    font-size: 10px;
+  }
+
+  .Concluded_Teams img {
+    width: 8vw;
+    height: 10vh;
+    object-fit: contain;
+  }
+
+  .See_All {
+    width: 100%;
+    /* height: 5vh; */
+  }
+
+  .See_All_Link {
+    width: 92%;
+    /* height: 10vh; */
+    background-color: #191d23;
+    margin-bottom: 2vh;
+    margin-left: -12px;
+  }
+
+  .scrollToTop {
+    margin-left: 50%;
+  }
+  /* 
+  .footer__two .links {
+    margin-top: 0.5rem;
+    margin-left: 145px;
+  } */
+
+  /* .footer__container>div {
+        width: 100%;
+        text-align: center;
+    } */
+
+  .Concluded_Records {
+    justify-content: space-around;
+  }
+}
+
+.AdminDropdown {
+  padding: 10px 15px;
+  color: var(--white);
+  background-color: var(--red) !important;
+}
+
+@media (max-width: 455px) {
+  .Concluded_Teams {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Current_Records {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .Manage-btn {
+    margin-left: 0%;
+  }
+
+  .image-box {
+    position: relative;
+    margin: 1vh 1vh 1vh 1vh;
+  }
+
+  .image-box img {
+    width: 320px;
+    height: 300px;
+  }
+}

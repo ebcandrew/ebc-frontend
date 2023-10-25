@@ -3,9 +3,9 @@ import "./Button.css";
 
 function Button({ text, onClick }) {
   return (
-    <div onClick={onClick} className="button">
+    <button onClick={onClick} className="button">
       {text}
-    </div>
+    </button>
   );
 }
 

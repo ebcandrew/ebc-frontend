@@ -5,10 +5,11 @@ import Curved from "../../components/button/Curved";
 import "./Shop.css";
 import { AlertError, AlertSuccess } from "../../components/Alerts/Alert";
 import { CircularProgress } from "@mui/material";
+import IMG from "../../components/imports/imgs/files/Product1.png";
 
 function Shop() {
   // const PF = "http://localhost:5000/imgs/products/";
-  const PF = `${process.env.REACT_APP_API_PUB}/products/`;
+  const PF = `${process.env.REACT_APP_PUBLIC_FOLDER_PUB}/products/`;
 
   const [error, setError] = useState(Boolean);
   const [errorMessage, setErrorMessage] = useState("");
@@ -16,6 +17,7 @@ function Shop() {
   const [successMessage, setSuccessMessage] = useState("");
 
   const [shopItems, setShopItems] = useState([]);
+  console.log(shopItems);
   const [items, setItems] = useState(shopItems);
   const [userDetails, setUserDetails] = useState([]);
   const [isFetching, setIsFetching] = useState(false);
@@ -226,8 +228,18 @@ function Shop() {
           <h3>shop</h3>
 
           <p>
-            Nulla rutrum sem turpis, at pretium quam porttitor in. Integer
-            sodales at enim et blandit. Aliquam dignissim vestibulum hendrerit.
+            Welcome to ebc.gg, your ultimate online destination for top-quality
+            jerseys, exclusive subscriptions, stylish hoodies, and much more! At
+            ebc.gg, we blend passion for sports and fashion, offering a curated
+            selection of premium products to cater to your unique tastes and
+            interests. Whether you're a sports enthusiast looking for the
+            perfect jersey to support your favorite team, a gaming aficionado
+            seeking exclusive subscriptions, or someone who simply wants to stay
+            cozy in our trendy hoodies, you've come to the right place. Explore
+            our user-friendly online store and discover a world of high-quality
+            apparel, accessories, and subscriptions tailored just for you.
+            Embrace your style, express your passion, and elevate your wardrobe
+            with ebc.gg. Let your shopping journey begin!.
           </p>
         </div>
       </div>
@@ -278,7 +290,7 @@ function Shop() {
 
       <div className="shop__items">
         <div className="tournamentbt__body__item shop__body__item">
-          <div className="item__btn">
+          {/* <div className="item__btn">
             {filterSub.nft ? (
               <Curved text={"NFTS"} />
             ) : filterSub.tshirts ? (
@@ -294,16 +306,16 @@ function Shop() {
             ) : (
               <Curved text={"OTHERS"} />
             )}
-          </div>
+          </div> */}
 
           <div className="other__items__2">
             {filterSub.nft ? (
               <div className="btn" id="first">
-                <h3>nfts</h3>
+                <h3>Subscription</h3>
               </div>
             ) : (
-              <div className="btn" onClick={() => handleSub("nft")}>
-                <h3>nfts</h3>
+              <div className="ShopBTN" onClick={() => handleSub("nft")}>
+                <span>Subscription</span>
               </div>
             )}
 
@@ -367,7 +379,11 @@ function Shop() {
                   className="shop__items__cards__item__img"
                 >
                   <img
-                    src={PF + item.thumbnail}
+                    src={
+                      // PF +
+                      // item.thumbnail
+                      IMG
+                    }
                     alt=""
                     crossOrigin="anonymous"
                   />
@@ -381,7 +397,7 @@ function Shop() {
                 >
                   <Button text={"purchase now"} />
                 </a>
-                {/*
+                {/* 
                 {userDetails.role === "admin" && (
                   <>
                     <a

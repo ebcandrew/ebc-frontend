@@ -8,11 +8,11 @@ import {
   Profile,
 } from "../../components/imports/imgs/Images";
 import Heading from "../../components/text/Heading";
-
+import { Link } from "react-router-dom";
 function Continental() {
   const [regional, setRegional] = useState([]);
   // const PF = "http://localhost:5000/imgs/users/";
-  const PF = `${process.env.REACT_APP_API_PUB}/users/`;
+  const PF = `${process.env.REACT_APP_PUBLIC_FOLDER_PUB}/users/`;
 
   const defaultPic =
     "https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-25.jpg";
@@ -39,7 +39,7 @@ function Continental() {
       name: "username",
       desc: "lorem ipsum",
       battles: 12,
-      win: 23,
+      wins: 23,
       loses: 43,
       wl: 4,
       rank: "legend",
@@ -51,7 +51,7 @@ function Continental() {
       name: "username",
       desc: "lorem ipsum",
       battles: 12,
-      win: 23,
+      wins: 23,
       loses: 43,
       wl: 4,
       rank: "legend",
@@ -63,7 +63,7 @@ function Continental() {
       name: "username",
       desc: "lorem ipsum",
       battles: 12,
-      win: 23,
+      wins: 23,
       loses: 43,
       wl: 4,
       rank: "legend",
@@ -75,7 +75,7 @@ function Continental() {
       name: "username",
       desc: "lorem ipsum",
       battles: 12,
-      win: 23,
+      wins: 23,
       loses: 43,
       wl: 4,
       rank: "legend",
@@ -88,7 +88,7 @@ function Continental() {
       name: "username",
       desc: "lorem ipsum",
       battles: 12,
-      win: 23,
+      wins: 23,
       loses: 43,
       wl: 4,
       rank: "legend",
@@ -100,7 +100,7 @@ function Continental() {
       name: "username",
       desc: "lorem ipsum",
       battles: 12,
-      win: 23,
+      wins: 23,
       loses: 43,
       wl: 4,
       rank: "legend",
@@ -112,7 +112,7 @@ function Continental() {
       name: "username",
       desc: "lorem ipsum",
       battles: 12,
-      win: 23,
+      wins: 23,
       loses: 43,
       wl: 4,
       rank: "legend",
@@ -135,86 +135,103 @@ function Continental() {
 
       <div className="leaderboard__btns">
         <div className="btn">
-          <a href="/leaderboard">
+          <Link to="/leaderboard">
             <Button text={"world wide"} />
-          </a>
+          </Link>
         </div>{" "}
         <div className="btn" id="first">
           <Button text={"Contentential"} />
         </div>
         <div className="btn">
-          <a href="/regional">
+          <Link to="/regional">
             <Button text={"country & regional"} />
-          </a>
+          </Link>
         </div>
       </div>
 
       <Heading text={"canada"} />
 
       <div className="leaderboard__para">
-        Nulla rutrum sem turpis, at pretium quam porttitor in. Integer sodales
-        at enim et blandit. Aliquam dignissim vestibulum hendrerit. Quisque
-        dapibus blandit metus. Nulla rutrum sem turpis, at pretium quam
-        porttitor in.
+        This web page showcases the world's top players, presenting
+        comprehensive stats like win-loss percentages and rankings.
       </div>
       <div className="table_wrapper">
         <table>
-          <tr>
+          <tr className="TableHead">
             <th>
-              <Button text={"rank"} />
+              <span className="RankButton">
+                <span className="RankButtonText">Rank</span>
+              </span>
+              {/* <Button text={"rank"} /> */}
             </th>
 
-            <th>name</th>
-            <th>battles</th>
-            <th>wins</th>
-            <th>losses</th>
-            <th>w/l %</th>
-            <th>competitor rank</th>
+            <th>
+              <span>name</span>
+            </th>
+            <th>
+              <span>battles</span>
+            </th>
+            <th>
+              <span>wins</span>
+            </th>
+            <th>
+              <span>losses</span>
+            </th>
+            <th>
+              <span>w/l %</span>
+            </th>
+            <th>
+              <span>competitor rank</span>
+            </th>
           </tr>
-          {regional.map((value, index) => {
+          {tableValues.map((value, index) => {
             return (
               <tr key={index}>
-                <td>{index + 1}</td>
+                <td> #{index + 1}</td>
 
                 <td id="cstate">
-                  <p className="country">
-                    <img src={value.country} alt="" />
-                  </p>
+                  <span className="country">
+                    <img style={{ width: "30px" }} src={value.country} alt="" />
+                  </span>
 
-                  <p className="name">
+                  <span className="name">
                     <h3>{value.name}</h3>
-                    <p>{value.desc}</p>
-                  </p>
+                    <span>{value.desc}</span>
+                  </span>
                   {value.profilePhoto === defaultPic ? (
                     <p className="profile">
-                      <a href={`/view-user/${value._id}`}>
+                      <Link to={`/view-user/${value._id}`}>
                         <img src={defaultPic} alt="" />
-                      </a>
+                      </Link>
                       <img src={value.art} alt="" />
                     </p>
                   ) : (
                     <p className="profile">
-                      <a href={`/view-user/${value._id}`}>
-                        <img
-                          src={PF + value.profilePhoto}
-                          alt=""
-                          crossOrigin="anonymous"
-                        />
-                      </a>
+                      <Link to={`/view-user/${value._id}`}>
+                        <img src={defaultPic} alt="" />
+                      </Link>
                       <img src={value.art} alt="" />
                     </p>
                   )}
                 </td>
 
-                <td>{value.battles}</td>
+                <td>
+                  <span className="tableValue">{value.battles}</span>
+                </td>
 
-                <td>{value.stats.wins}</td>
+                <td>
+                  <span className="tableValue">{value.wins}</span>
+                </td>
 
-                <td>{value.stats.Loses}</td>
+                <td>
+                  <span className="tableValue">{value.loses}</span>
+                </td>
 
-                <td>{value.stats.WLPercentage}</td>
+                <td>
+                  <span className="tableValue">{value.wl}</span>
+                </td>
 
-                <td id="rank">{value.stats.regionalRank}</td>
+                <td id="rank">{value.rank}</td>
               </tr>
             );
           })}

@@ -1,0 +1,110 @@
+.TournamentLayoutSection {
+  width: 100%;
+}
+
+.TournamentLayoutHeader {
+  display: flex;
+}
+
+.HeaderContentSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.HeaderContentContainer {
+  width: 90%;
+}
+.HeaderTitle {
+  color: white;
+  font-weight: 700;
+  font-size: 51px;
+}
+
+.HeaderTitle2 {
+  color: red;
+  font-weight: 700;
+  font-size: 51px;
+}
+
+.HeaderDesc {
+  color: lightgray;
+}
+
+@media screen and (max-width: 1200px) {
+  .HeaderImageSection img {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .StatBox {
+    background-color: #1e2229;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    padding: 35px 0;
+    width: 300px !important;
+  }
+}
+
+@media screen and (max-width: 995px) {
+  .HeaderImageSection img {
+    width: 450px;
+  }
+
+  .HeaderTitle {
+    font-size: 40px !important;
+  }
+
+  .HeaderTitle2 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 885px) {
+  .GamerStatBox {
+    width: 90% !important;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .TournamentLayoutHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .HeaderContentContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .MatchUpBox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .MatchUpPlayersStats {
+    margin-top: 0px !important;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .HeaderImageSection img {
+    width: 300px;
+  }
+
+  .MatchUpPlayerOne {
+    width: 330px !important;
+  }
+
+  .MatchUpPlayerTwo {
+    width: 330px !important;
+  }
+}

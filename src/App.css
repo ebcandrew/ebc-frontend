@@ -20,6 +20,10 @@ body {
   --orange: #ff4825;
   --lightGrey: #222831;
   --blogLinear: rgba(0, 0, 0, 0.8);
+  --MainBg: rgb(26, 29, 36);
+  --MainPrimary: rgb(20, 23, 28);
+  --BTN: rgb(49 54 62 / 90%);
+  --BTNSecondary: rgba(34, 39, 45, 0.9);
 }
 
 /* @media (max-width: 550px) {
@@ -27,3 +31,7 @@ body {
     width: 80%;
   }
 } */
+body,
+.App {
+  background-color: rgb(26 29 36);
+}

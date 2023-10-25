@@ -8,13 +8,19 @@ import {
   OndemandVideoIcon,
   ShareIcon,
 } from "../../components/imports/icons/Icons";
-import { AD, Rank, Team1, Tourna } from "../../components/imports/imgs/Images";
+import {
+  AD,
+  Rank,
+  Team1,
+  AdminHeroSectionImage,
+  Header1,
+} from "../../components/imports/imgs/Images";
 import Heading from "../../components/text/Heading";
 
 function TournamentMu() {
   const [outcomes, setOutcomes] = useState([]);
   const { tournamentId } = useParams();
-  useEffect(() => { 
+  useEffect(() => {
     axios
       .patch(`/tournaments/${tournamentId}/outcomes`)
       .then((response) => {
@@ -128,18 +134,20 @@ function TournamentMu() {
           </h3>
 
           <p>
-            Nulla rutrum sem turpis, at pretium quam porttitor in. Integer
-            sodales at enim et blandit. Aliquam dignissim vestibulum hendrerit.
+            We want to ensure that everyone has the opportunity to improve and
+            learn from their gameplay. To make this possible, please remember to
+            record your matches both in-game and on the platform you're using
+            for our events.
           </p>
 
           <div className="tournament__text__footer">
-            <div className="content">
+            <div className="torunament_content">
               <p>tournament name :</p>
 
               <p>lorem ipsum</p>
             </div>
 
-            <div className="content">
+            <div className="torunament_content">
               <p>Opponent :</p>
 
               <p>lorem ipsum</p>
@@ -148,7 +156,7 @@ function TournamentMu() {
         </div>
 
         <div className="tournament__image">
-          <img src={Tourna} alt="" />
+          <img src={AdminHeroSectionImage} style={{ width: "100%" }} alt="" />
         </div>
       </div>
 
@@ -162,7 +170,7 @@ function TournamentMu() {
             <Curved text={"1"} />
           </div>
 
-          <div>
+          <div className="SectionWrapper">
             <p>
               Add <span>amaced24</span> to your <span>Friends list</span>
             </p>
@@ -192,11 +200,11 @@ function TournamentMu() {
             <Curved text={"2"} />
           </div>
 
-          <div>
-            <p>
+          <div className="SectionWrapperTwo">
+            <span>
               If you are not yet <span> Good Friends </span>, send a gift to
               <span> amaced24</span> or open the gift they send you.
-            </p>
+            </span>
           </div>
         </section>
 
@@ -205,22 +213,22 @@ function TournamentMu() {
             <Curved text={"3"} />
           </div>
 
-          <div>
-            <p>
+          <div className="SectionWrapperTwo">
+            <span>
               Challenge each other to Battle via the button on Friend screen.
-            </p>
+            </span>
           </div>
         </section>
 
         <section>
-          <div>
+          <div className="SectionWrapperTwo">
             <Curved text={"4"} />
           </div>
 
-          <div>
-            <p>
+          <div className="SectionWrapperTwo">
+            <span>
               Select the <span> Great League </span> for battle.
-            </p>
+            </span>
           </div>
         </section>
 
@@ -229,8 +237,8 @@ function TournamentMu() {
             <Curved text={"5"} />
           </div>
 
-          <div>
-            <p>Select 3 Pokemon from your registered team of 6.</p>
+          <div className="SectionWrapperTwo">
+            <span>Select 3 Pokemon from your registered team of 6.</span>
           </div>
         </section>
 
@@ -239,8 +247,8 @@ function TournamentMu() {
             <Curved text={"6"} />
           </div>
 
-          <div>
-            <p>Battle 3 times!</p>
+          <div className="SectionWrapperTwo">
+            <span>Battle 3 times!</span>
           </div>
         </section>
 
@@ -249,8 +257,8 @@ function TournamentMu() {
             <Curved text={"7"} />
           </div>
 
-          <div>
-            <p>Report your outcome below! (FAQ & rules below)</p>
+          <div className="SectionWrapperTwo">
+            <span>Report your outcome below! (FAQ & rules below)</span>
           </div>
         </section>
 
@@ -259,10 +267,10 @@ function TournamentMu() {
             <Curved text={"8"} />
           </div>
 
-          <div>
-            <p>
+          <div className="SectionWrapperTwo">
+            <span>
               After battle, congratulate your opponent for a fight well fought!
-            </p>
+            </span>
           </div>
         </section>
 
@@ -309,7 +317,7 @@ function TournamentMu() {
         </div>
 
         <div className="battle__table__btn">
-          <Button text={"report all 3 battles to proceed"} />
+          <button>Report All 3 Battles To Procees</button>
         </div>
       </div>
 

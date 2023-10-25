@@ -1,0 +1,135 @@
+.MatchUpSection {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.MatchUpTitle {
+  position: relative;
+  color: white;
+  font-weight: 600;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.MatchUpTitle:after {
+  content: "";
+  position: absolute;
+  width: 30%;
+  display: block;
+  height: 2px;
+  background-color: red;
+  bottom: -5px;
+}
+
+.MatchUpContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.MatchUpBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 25px;
+  padding: 50px 0px;
+}
+.MatchUpBox:hover {
+  background-color: #1f252d;
+  cursor: pointer;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
+}
+
+.MatchUpPlayersStats {
+  display: flex;
+  margin-top: -40px;
+  flex-direction: column;
+}
+
+.MatchUpLeagueStats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.MatchUpPlayerStatNumbers {
+  color: white;
+  font-weight: 700;
+}
+
+.MatchUpVsText {
+  color: white;
+  margin-top: -5px;
+  font-size: 13px;
+}
+
+.MatchupTournamentName {
+  color: white;
+  font-weight: 700;
+}
+
+.MatchupLeagueName {
+  color: red;
+  font-size: 12px;
+}
+
+.MatchUpStatsContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.MatchUpPlayerVSBoxWrapper {
+  width: 40px;
+  height: 22px;
+  transform: skew(20deg);
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MatchUpPlayerOne {
+  border-bottom: 50px solid #018752;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 370px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.MatchUpPlayerName {
+  color: white;
+  margin-top: 12px;
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.MatchUpPlayerImage {
+  width: 70px;
+  margin-right: -25px;
+  margin-left: -10px;
+  margin-top: -20px;
+}
+
+.MatchUpPlayerTwo {
+  border-bottom: 50px solid red;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 370px;
+  display: flex;
+  justify-content: space-between;
+}

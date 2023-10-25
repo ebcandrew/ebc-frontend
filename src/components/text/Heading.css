@@ -12,3 +12,6 @@
 .heading p {
   text-align: center;
 }
+.heading p::after {
+  text-align: center;
+}

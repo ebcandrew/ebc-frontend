@@ -1,0 +1,103 @@
+.GamerStatBox {
+  width: 70%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.StatTitleBox {
+  width: 100%;
+  height: auto;
+  background-color: #1e2229;
+}
+
+.StatTitleWrapper {
+  border-bottom: 50px solid red;
+  border-left: 0px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.StatWrapperName {
+  font-weight: 700;
+  color: white;
+  font-size: 13px;
+}
+
+.StatWrapperName {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.StatBoxesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 5px;
+}
+
+.StatBox {
+  background-color: #1e2229;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+  padding: 35px 0;
+  width: 364px;
+}
+
+.StatBox:hover {
+  background-color: #222831;
+  cursor: pointer;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s;
+}
+
+.StatBoxImageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 28px 31px;
+  border-radius: 50%;
+  background-color: #2d343e;
+}
+
+.WrapperImage {
+  width: 60px;
+}
+
+.StatBoxContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.StatBoxTitle {
+  color: red;
+  font-size: 12px;
+}
+
+.StatBoxName {
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+}
+
+.StatBoxCp {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.StatBoxCpTitle {
+  color: lightgray;
+  font-size: 11px;
+}
+
+.StatBoxFlag {
+  width: 30px;
+}
